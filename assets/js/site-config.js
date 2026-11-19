@@ -1,5 +1,6 @@
 export const site = {
-  name: "Fleur & Form",
+  name: "AERELLE",
+  descriptor: "SALON & BEAUTY STUDIO",
   phone: "",
   email: "",
   address: "",

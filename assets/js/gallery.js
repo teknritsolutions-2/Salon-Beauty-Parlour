@@ -1,5 +1,6 @@
 import { setupFilters } from "./filters.js";
 const photos = [
+  ["look-skin", "Skin", "Gentle facial massage", 1100, 733],
   ["waves", "Hair", "Long copper-brown waves", 1067, 1600],
   ["bridal", "Makeup", "Bridal eye makeup in progress", 1067, 1600],
   [
@@ -14,7 +15,7 @@ const photos = [
   ["makeup", "Makeup", "Blending eyeshadow", 1067, 1600],
   ["hair", "Hair", "Shaping a silver bob with scissors", 1280, 854],
   ["wash", "Hair", "A hair wash at the basin", 1067, 1600],
-  ["hero", "Hair", "Shaping wet hair with a comb and scissors", 1100, 1650],
+  ["hero", "Hair", "Arranging soft curls at the salon", 1800, 2700],
 ];
 const grid = document.querySelector("#gallery");
 const viewer = document.querySelector("#viewer");

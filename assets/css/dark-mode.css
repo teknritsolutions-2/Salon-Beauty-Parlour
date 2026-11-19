@@ -1,15 +1,15 @@
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --paper: #121212;
-  --surface: #202020;
-  --subtle: #292929;
-  --ink: #f3f2ed;
-  --muted: #bdbbb4;
-  --accent: #c7ac91;
-  --action: #f3f2ed;
-  --on-action: #181818;
-  --line: #3f3f3b;
+  --paper: #111518;
+  --surface: #202426;
+  --subtle: #272c2f;
+  --ink: #f1f6f9;
+  --muted: #bcc5cb;
+  --accent: #a6d5ed;
+  --action: #a6d5ed;
+  --on-action: #17232a;
+  --line: #3d484e;
 }
 [data-theme="dark"] .brand img {
-  filter: brightness(1.8) saturate(0.3);
+  filter: brightness(0) invert(1);
 }

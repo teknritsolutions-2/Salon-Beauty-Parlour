@@ -20,6 +20,14 @@ function updateServices() {
   );
 }
 fields.category.onchange = updateServices;
+for (const link of document.querySelectorAll("[data-category]")) {
+  link.addEventListener("click", () => {
+    fields.category.value = link.dataset.category;
+    updateServices();
+    if (form.hidden) edit.click();
+    fields.service.focus({ preventScroll: true });
+  });
+}
 const choice = menu.find(
   (s) => s.id === new URLSearchParams(location.search).get("service"),
 );
@@ -81,7 +89,7 @@ form.onsubmit = (e) => {
     list.append(label, detail);
   }
   summary = [
-    "Fleur & Form — appointment request",
+    "AERELLE — appointment request",
     "Prepared locally. Salon confirmation required.",
     "",
     ...rows.map(([k, v]) => k + ": " + v),
@@ -120,7 +128,7 @@ download.onclick = () => {
   );
   const a = document.createElement("a");
   a.href = url;
-  a.download = "fleur-and-form-appointment.txt";
+  a.download = "aerelle-appointment.txt";
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 };
