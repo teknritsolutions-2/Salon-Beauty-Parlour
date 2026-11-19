@@ -89,7 +89,7 @@ form.onsubmit = (e) => {
     list.append(label, detail);
   }
   summary = [
-    "AERELLE — appointment request",
+    "CIELVANE — appointment request",
     "Prepared locally. Salon confirmation required.",
     "",
     ...rows.map(([k, v]) => k + ": " + v),
@@ -128,7 +128,7 @@ download.onclick = () => {
   );
   const a = document.createElement("a");
   a.href = url;
-  a.download = "aerelle-appointment.txt";
+  a.download = "cielvane-appointment.txt";
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 };

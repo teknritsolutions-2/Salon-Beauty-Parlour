@@ -1,8 +1,8 @@
-# AERELLE — Salon & Beauty Studio
+# CIELVANE — Salon & Beauty Studio
 
 A six-page static salon website built with HTML, CSS and native JavaScript modules. All fonts and photographs are served from the project.
 
-AERELLE is a proposed working brand. Trademark and domain availability have not been verified.
+CIELVANE is a proposed working brand. Trademark and domain availability have not been verified.
 
 Live site — https://teknritsolutions-2.github.io/Salon-Beauty-Parlour/
 

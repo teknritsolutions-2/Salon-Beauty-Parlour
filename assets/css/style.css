@@ -188,7 +188,8 @@ footer nav a:hover {
   display: block;
   padding: 0.4rem 0.65rem;
 }
-.utilities {
+.utilities,
+#appearance {
   gap: 0.35rem;
 }
 .icon {
@@ -313,20 +314,19 @@ footer nav a:hover {
 }
 .feature {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.1fr 1fr;
   align-items: center;
-  gap: clamp(24px, 5vw, 85px);
-  margin-bottom: clamp(50px, 6vw, 96px);
-  overflow: hidden;
+  gap: clamp(24px, 4vw, 56px);
+  margin-bottom: clamp(48px, 5vw, 72px);
 }
 .feature > img {
+  width: 100%;
   height: auto;
-  aspect-ratio: 1.25;
+  aspect-ratio: 1.5;
   object-fit: cover;
 }
 .feature > div {
-  padding-block: 2rem;
-  padding-inline-end: clamp(20px, 4vw, 76px);
+  padding-block: 1rem;
 }
 .feature p:not(.eyebrow),
 .band p {
@@ -489,11 +489,15 @@ footer nav {
   margin: 0.55rem 0 1rem;
 }
 .occasion article {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   border-top: 1px solid var(--line);
-  padding-top: 1.4rem;
+  padding-top: 1.25rem;
 }
 .occasion p {
   margin: 0.6rem 0 1rem;
+  flex: 1;
 }
 .band {
   padding-block: 2.5rem;
@@ -685,10 +689,10 @@ footer nav h2 {
 }
 .lookbook-grid {
   display: grid;
-  grid-template-columns: 1fr 1.25fr 1fr;
-  gap: 2rem;
-  align-items: center;
-  margin-top: 2rem;
+  grid-template-columns: 0.667fr 1.5fr 0.667fr;
+  align-items: start;
+  gap: clamp(16px, 2.4vw, 32px);
+  margin-top: 1.75rem;
 }
 .lookbook-grid img {
   width: 100%;
@@ -728,21 +732,6 @@ footer nav h2 {
 }
 .support .actions {
   gap: 1.5rem;
-}
-.planning ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 1.2rem;
-}
-.planning h3 {
-  font-size: 1.7rem;
-  margin-bottom: 0.35rem;
-}
-.planning li + li {
-  border-top: 1px solid var(--line);
-  padding-top: 1.2rem;
 }
 #review dl {
   padding-block: 1rem;
@@ -784,10 +773,10 @@ footer nav h2 {
 }
 .experience {
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  align-items: center;
-  gap: 9%;
-  padding-block: 0 4rem;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: start;
+  gap: clamp(24px, 4vw, 56px);
+  padding-bottom: clamp(48px, 5vw, 72px);
 }
 .experience-copy > p:not(.eyebrow) {
   margin-top: 1rem;
@@ -799,22 +788,23 @@ footer nav h2 {
 }
 .experience > img {
   width: 100%;
-  max-height: 480px;
+  height: auto;
+  aspect-ratio: 1.15;
   object-fit: cover;
-  object-position: 50% 30%;
+  object-position: 50% 24%;
 }
 .beauty-detail {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-columns: minmax(210px, 0.7fr) 1.3fr;
   align-items: center;
-  gap: 9%;
-  padding-block: 0 4rem;
+  gap: clamp(24px, 4vw, 56px);
+  padding-bottom: clamp(48px, 5vw, 72px);
 }
 .beauty-detail > img {
   width: 100%;
-  max-height: 540px;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
+  max-width: 310px;
+  justify-self: center;
 }
 .beauty-detail p:not(.eyebrow) {
   max-width: 45ch;
@@ -822,14 +812,14 @@ footer nav h2 {
 }
 .occasion-edit {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 0.667fr 1.5fr 0.741fr;
+  gap: 1.5rem;
   align-items: start;
-  margin-bottom: 4rem;
+  margin-bottom: clamp(48px, 5vw, 72px);
 }
 .occasion-edit-heading {
-  grid-column: 1 / 3;
-  padding-block: 1rem;
+  grid-column: 1 / -1;
+  padding: 0;
 }
 .occasion-edit-heading p:last-child {
   margin-top: 1rem;
@@ -851,15 +841,15 @@ footer nav h2 {
   text-decoration: underline;
 }
 .edit-hair {
-  grid-column: 3;
-  grid-row: 1 / 3;
-}
-.edit-skin {
   grid-column: 1;
   grid-row: 2;
 }
-.edit-makeup {
+.edit-skin {
   grid-column: 2;
+  grid-row: 2;
+}
+.edit-makeup {
+  grid-column: 3;
   grid-row: 2;
 }
 .planning-guide p {
@@ -912,9 +902,92 @@ footer nav h2 {
 .brand img {
   filter: brightness(0);
 }
+
+.drawer-appearance {
+  border-top: 1px solid var(--line);
+  padding-top: 1.25rem;
+  margin-top: 1.5rem;
+}
+.drawer-appearance h2 {
+  font: 600 1rem/1.4 var(--sans);
+  margin-bottom: 0.75rem;
+}
+#drawer-appearance #appearance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+#drawer #theme,
+#drawer #direction {
+  width: 100%;
+  height: 46px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  gap: 0.5rem;
+}
+#drawer #theme::after {
+  content: "Theme";
+  font: 600 0.9rem/1 var(--sans);
+}
+#drawer #theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#drawer-action .btn {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+.appointment-faq {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(24px, 4vw, 56px);
+  padding-block: 0 3.5rem;
+}
+.appointment-faq h2 {
+  font-size: clamp(2.4rem, 3.8vw, 3.8rem);
+}
+.appointment-faq details {
+  border-top: 1px solid var(--line);
+  padding-block: 1rem;
+}
+.appointment-faq summary {
+  font-weight: 600;
+  cursor: pointer;
+}
+.appointment-faq details p {
+  margin-top: 0.75rem;
+}
+.popular {
+  border-top: 1px solid var(--line);
+}
+.popular h2 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+}
+.popular-note {
+  margin: 1rem 0 1.5rem;
+}
+.popular-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 2rem;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding-block: 1.25rem;
+}
+.treatment-meta {
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+}
+.popular-row strong {
+  white-space: nowrap;
+}
 @media (max-width: 1150px) {
   .desktop {
     display: none;
+  }
+  .bar {
+    direction: ltr;
   }
   #open-nav {
     display: grid;
@@ -948,9 +1021,7 @@ footer nav h2 {
   .utilities {
     gap: 0;
   }
-  .utilities .btn {
-    display: none;
-  }
+
   .icon {
     width: 36px;
     height: 40px;
@@ -1069,9 +1140,9 @@ footer nav h2 {
 .highlight {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.25rem;
   align-items: center;
-  padding: 0.85rem 0;
+  padding: 1.1rem 0;
 }
 .highlight + .highlight {
   border-top: 1px solid var(--line);
@@ -1206,14 +1277,11 @@ footer nav h2 {
     gap: 1.5rem;
   }
   .experience > img {
-    max-height: 430px;
-    aspect-ratio: 1;
-    object-position: 50% 35%;
+    aspect-ratio: 1.15;
+    object-position: 50% 24%;
   }
   .beauty-detail > img {
-    max-height: 430px;
-    object-fit: contain;
-    background: var(--subtle);
+    max-width: 280px;
   }
   .occasion-edit {
     grid-template-columns: 1fr 1fr;
@@ -1223,15 +1291,15 @@ footer nav h2 {
   }
   .edit-hair {
     grid-column: 1;
-    grid-row: 2 / 4;
+    grid-row: 2;
   }
   .edit-skin {
-    grid-column: 2;
-    grid-row: 2;
+    grid-column: 1 / -1;
+    grid-row: 3;
   }
   .edit-makeup {
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 2;
   }
   .enquiry-links,
   .visit-tips {
@@ -1240,5 +1308,44 @@ footer nav h2 {
   .visit-guide > .line {
     flex-direction: column;
     align-items: start;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .experience {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 24px;
+  }
+  .beauty-detail {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 24px;
+  }
+  .experience h2,
+  .beauty-detail h2,
+  .feature h2 {
+    font-size: clamp(2.5rem, 4.5vw, 3.5rem);
+  }
+  .lookbook-grid {
+    gap: 16px;
+  }
+}
+@media (max-width: 640px) {
+  .appointment-faq {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .popular > .line {
+    align-items: start;
+    flex-direction: column;
+  }
+  .popular-row {
+    grid-template-columns: 1fr auto;
+    gap: 0.75rem 1rem;
+  }
+  .popular-row > div {
+    grid-column: 1 / -1;
+  }
+  .lookbook-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }

@@ -1,10 +1,10 @@
-# AERELLE browser QA
+# CIELVANE browser QA
 
 Verified on 19 November 2026 using headless Brave/Chromium and Playwright.
 
 ## Current identity and scope
 
-AERELLE replaces the former brand throughout all six pages, metadata, shared navigation, drawer, footer, favicon, configuration and downloaded appointment requests. The original bird SVG is shared across brand placements and remains unmirrored in RTL. Instrument Serif and DM Sans remain self-hosted.
+CIELVANE replaces the former brand throughout all six pages, metadata, shared navigation, drawer, footer, favicon, configuration and downloaded appointment requests. The original wing SVG is shared across brand placements and remains unmirrored in RTL. Instrument Serif and DM Sans remain self-hosted.
 
 Cloud white, neutral surfaces and ink form the foundation. Deep sky #356D88 serves buttons and selected details in light mode. Pale sky #A6D5ED provides contrasting actions and accents on near-black dark-mode surfaces. The direction control shows its next action as RTL or LTR, with matching accessible labels.
 
@@ -37,9 +37,9 @@ The two homepages have distinct major photographic features. Each homepage uses 
 
 The baseline regression suite was repeated across 78 page/width combinations, with internal links checked under a GitHub Pages-style subdirectory. It covered desktop Home dropdown and Escape, sticky header, physical-left drawer in both directions, scrolling lock, theme/direction persistence, category filters, service links, booking preselection, gallery filtering, lightbox navigation and keyboard dismissal, invalid phone/email/past dates, review/edit/preparation, downloaded text, FAQ disclosure and back-to-top.
 
-Additional browser checks covered Contact's three category shortcuts, the general consultation link, all five FAQ disclosures, RTL/LTR text and persistence, unmirrored brand flow, editing a category after review, the AERELLE request contents and aerelle-appointment.txt filename.
+Additional browser checks covered Contact's three category shortcuts, the general consultation link, all five FAQ disclosures, RTL/LTR text and persistence, unmirrored brand flow, editing a category after review, the CIELVANE request contents and cielvane-appointment.txt filename.
 
-The responsive matrix covered all six pages at 320, 390, 430, 768, 820, 1024, 1180, 1280 and 1440 pixels in light/dark and LTR/RTL, totalling 216 combinations. The 1180-pixel width supplements the requested set. Images decoded successfully and no horizontal overflow or JavaScript exceptions were recorded.
+The responsive matrix covered all six pages at 320, 360, 390, 425, 430, 768, 820, 960, 1024, 1180, 1280 and 1440 pixels in light/dark and LTR/RTL, totalling 288 combinations. All requested mobile, tablet and desktop widths are included. Images decoded successfully and no horizontal overflow or JavaScript exceptions were recorded.
 
 Full-page screenshots were inspected for all six pages on mobile, tablet and desktop, including light RTL and dark LTR tablet views and dark RTL mobile views. Review included hero framing, portrait proportions, added sections, Contact spacing, logo scale, footer grouping and control visibility. Hero intrinsic sizing was corrected during visual review. Browser scripts and screenshots are retained outside the deployable project in /tmp.
 
@@ -47,6 +47,18 @@ Full-page screenshots were inspected for all six pages on mobile, tablet and des
 
 The release uses the existing repository and GitHub Pages address. Native JavaScript modules and relative links retain repository-subdirectory compatibility. No build system is required.
 
-Booking details are prepared in the browser and can be downloaded. Salon confirmation still requires direct contact. Production integration requires verified contact details, approved offerings and prices, and a scheduling or request-delivery system. AERELLE is a proposed working brand. Trademark and domain availability have not been verified.
+Booking details are prepared in the browser and can be downloaded. Salon confirmation still requires direct contact. Production integration requires verified contact details, approved offerings and prices, and a scheduling or request-delivery system. CIELVANE is a proposed working brand. Trademark and domain availability have not been verified.
 
 Verification used Chromium. Physical devices, Safari and Firefox were not independently tested.
+
+## Final layout, brand and navigation refinement
+
+CIELVANE is the selected working name after a basic public search. The search scope and unrelated uses are recorded in asset-credits.md. The entirely redrawn mark uses a flowing wing outline and a single inner contour. The former logo asset was removed. Site metadata, shared wordmarks, configuration, booking summary and cielvane-appointment.txt use the new name. Existing preference storage keys are retained to preserve returning visitors’ theme and direction choices.
+
+Both homepages retain their section sequence and character. Experience text aligns to the top of a closer, more balanced image column. Studio photography uses a landscape frame. Beauty Details uses its natural portrait ratio with a smaller image column. Lookbook and Occasion Edit use column proportions matched to source-image ratios so the images and captions align. Occasion descriptions flex within equal-height rows to keep service links aligned. Featured treatment rows use consistent spacing. Home 1 adds four working Before Your Appointment disclosures. Home 2 adds three catalogue-driven Popular Treatment Choices with category, duration, indicative price and booking handoff.
+
+At 1150 pixels and below, the header contains only the brand and hamburger, with the same physical positions in either reading direction. Navigation links, Appearance controls and the booking action live in the physical-left drawer. The existing control nodes move between their desktop and compact positions, keeping unique IDs, handlers and state. Appearance changes keep the drawer open. Navigation, its close control, backdrop click and Escape dismiss it. Background scrolling locks while open. Native modal focus restoration returns to the hamburger. The panel can scroll internally. Desktop appearance and booking controls remain in the header.
+
+The dedicated navigation suite passed 72 page/width combinations across all six pages and all 12 requested widths. It verified header contents, unique control IDs, utility placement, theme/direction changes while the drawer stays open, physical-left placement in both directions, scroll locking, Escape and close behavior, focus restoration and utility relocation after resizing between compact and desktop. New FAQ disclosures and catalogue-based treatment prices, durations and booking links also passed. The existing 78-combination workflow regression and the 288-combination theme/direction matrix passed. Full-page screenshots were inspected on mobile, tablet and desktop, together with compact drawer screenshots.
+
+The palette, fonts, footer structure, Services, Pricing, Gallery and Contact workflows remain the existing implementation. No new photography was needed for this finishing pass.

@@ -1,5 +1,5 @@
 export const site = {
-  name: "AERELLE",
+  name: "CIELVANE",
   descriptor: "SALON & BEAUTY STUDIO",
   phone: "",
   email: "",

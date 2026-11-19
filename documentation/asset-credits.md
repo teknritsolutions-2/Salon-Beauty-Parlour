@@ -30,4 +30,8 @@ DM Sans is locally hosted as a variable WOFF2. The accompanying SIL Open Font Li
 
 ## Identity
 
-The abstract bird mark in assets/icons/aerelle.svg was drawn originally for this project. The same mark appears in the header, drawer, footer and favicon. AERELLE is a proposed working brand. Trademark and domain availability have not been verified.
+The abstract wing mark in assets/icons/cielvane.svg was drawn originally for this project. The same mark appears in the header, drawer, footer and favicon. CIELVANE is a proposed working brand. Trademark and domain availability have not been verified.
+
+## Working name search
+
+A basic public web search on 19 November 2026 for “CIELVANE salon beauty” and “Cielvane” found no material salon-business conflict in the reviewed results. Unrelated uses included an [artist portfolio](https://kirke.social/cielvane/portfolio) and an [avatar-texture product](https://booth.pm/zh-cn/items/8820705). CIELVANE was retained as the proposed working name. This search does not establish legal clearance, trademark availability or exclusive domain rights.
