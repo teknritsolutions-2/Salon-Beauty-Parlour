@@ -30,3 +30,21 @@ The booking workflow prepares a local request. Live operation requires verified 
 The local checkouts of the named travel, yoga, courier, music and school transport projects were available. Their page/module structure and responsive QA material informed the navigation, booking handoff and test matrix. No separate 15-project lessons document was located in the searched project and document locations.
 
 Browser results apply to Chromium at the tested viewport sizes. Physical devices, Safari and Firefox were not independently tested.
+
+## Luxury visual refinement — 19 November 2026
+
+The refinement retains the six-page static architecture, shared service catalogue, booking implementation and gallery interactions. Off-white, white, rich black and charcoal replace the previous blush palette. A muted bronze accent is limited to labels, links and selected details. Instrument Serif and DM Sans remain self-hosted.
+
+Home 1 now uses a rectangular editorial haircut photograph, with the decorative arch and seal removed. Signature Services, Featured Treatments and Inside the Studio remain. A three-image Lookbook and a compact closing appointment invitation were added. Home 2 uses a separate black-and-white styling photograph, retains its occasion-based navigation, and adds a concise visit-planning sequence. Consultation guidance, price factors and a gallery-to-booking invitation complete the secondary pages. The shared footer now groups Explore, Treatments and Appointments alongside the brand and a copyright row.
+
+Two new licensed Pexels photographs replace the former main hero and Home 2 interior reuse. The existing studio, hair, skin and makeup photographs remain. Home 2's inspiration section now uses the colour-application photograph. Full credits are in asset-credits.md.
+
+### Checks actually performed
+
+- The existing functional regression suite passed again, including 78 page/width combinations, 33 internal link targets under a repository subdirectory, sticky navigation, desktop Home dropdown, both physical-left drawer directions, background scroll locking, theme/direction persistence, service and pricing filtering, service-to-booking preselection, gallery filtering and lightbox navigation, invalid form inputs and dates, review/edit/preparation, downloaded request content, FAQ expansion and back-to-top.
+- A further 216 combinations covered all six pages at 320, 390, 430, 768, 820, 1024, 1180, 1280 and 1440 pixels in light/dark and LTR/RTL. All passed the overflow check. Images decoded and no JavaScript exceptions were recorded.
+- Full-page browser screenshots were inspected across all pages at mobile, tablet and desktop sizes, including light RTL and dark LTR tablet sheets and dark RTL mobile sheets. Visual corrections included shared header alignment, hero image positioning, the second hero's contrasting CTA, RTL gradient direction and natural portrait framing.
+- Gallery photographs retain their intrinsic ratios. Mobile service rows and form fields stack. The Lookbook uses a compact three-image desktop arrangement and a two-column mobile arrangement with the skin image below.
+- Chromium was used. Physical-device, Safari and Firefox testing remains outside this verification.
+
+The original GitHub Pages deployment is live. The refined release is published to the same repository and Pages address after verification. Requests continue to be prepared locally. Production operation needs verified contact details, approved service offerings/rates and a salon scheduling or request-delivery integration.

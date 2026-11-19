@@ -12,3 +12,14 @@
   unicode-bidi: plaintext;
   text-align: right;
 }
+
+@media (min-width: 641px) {
+  [dir="rtl"] .alt-hero::after {
+    background: linear-gradient(
+      270deg,
+      #181818 15%,
+      #181818e0 32%,
+      transparent 70%
+    );
+  }
+}

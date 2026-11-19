@@ -6,7 +6,8 @@ The site uses licensed salon and beauty reference photography. Each local WebP p
 
 | Local asset | Subject | Photographer and original photograph |
 | --- | --- | --- |
-| hero.webp | Styling a bob with a curling iron | [Ron Lach](https://www.pexels.com/photo/hairdresser-using-curling-iron-on-customers-hair-10318038/) |
+| hero.webp | Cutting wet hair with comb and scissors | [cottonbro studio](https://www.pexels.com/photo/woman-having-a-haircut-3993445/) |
+| studio-edit.webp | Black-and-white hair styling at a vanity | [Bimo Agmi](https://www.pexels.com/photo/woman-sitting-in-front-of-a-vanity-mirror-and-having-her-hair-done-6369888/) |
 | hair.webp | Trimming the nape of a silver bob | [Kampus Production](https://www.pexels.com/photo/a-client-having-her-hair-cut-by-the-hair-stylist-8834077/) |
 | skin.webp | Brushing on a cream facial mask | [Gustavo Fring](https://www.pexels.com/photo/woman-with-white-facial-mask-3985331/) |
 | makeup.webp | Eye makeup in a beauty studio | [George Milton](https://www.pexels.com/photo/visagiste-applying-eye-makeup-on-content-clients-face-6954214/) |
