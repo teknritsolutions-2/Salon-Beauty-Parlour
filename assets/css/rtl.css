@@ -1,0 +1,14 @@
+[dir="rtl"] .brand {
+  direction: ltr;
+}
+[dir="rtl"] input[type="email"],
+[dir="rtl"] input[type="tel"] {
+  direction: ltr;
+  text-align: right;
+}
+
+/* Preserve punctuation in English copy within the right-to-left layout. */
+[dir="rtl"] :is(h1, h2, h3, p, dd) {
+  unicode-bidi: plaintext;
+  text-align: right;
+}

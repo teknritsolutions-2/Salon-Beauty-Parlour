@@ -1,0 +1,15 @@
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #231e20;
+  --surface: #30272b;
+  --blush: #382b30;
+  --ink: #fff3eb;
+  --muted: #decfc8;
+  --rose: #f0a9ba;
+  --action: #f0b3c1;
+  --on-action: #341622;
+  --line: #655159;
+}
+[data-theme="dark"] .brand img {
+  filter: brightness(1.8) saturate(0.6);
+}

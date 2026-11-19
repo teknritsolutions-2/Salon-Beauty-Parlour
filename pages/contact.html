@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore hair, skin and makeup services, indicative prices and appointment planning at Fleur &amp; Form Salon &amp; Beauty Parlour."
+    />
+    <title>
+      Contact & appointments | Fleur &amp; Form — Salon &amp; Beauty Parlour
+    </title>
+    <link rel="icon" href="../assets/icons/bloom.svg" />
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/dark-mode.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script type="module" src="../assets/js/main.js"></script>
+  </head>
+  <body data-page="contact">
+    <a class="skip" href="#main">Skip to content</a>
+    <header></header>
+    <main id="main">
+      <section class="intro wrap">
+        <p class="eyebrow"><i> </i>Contact & appointments</p>
+        <h1>Book an appointment</h1>
+        <p>
+          Prepare a request with your preferred service and time. Share the
+          details with the salon to arrange confirmation.
+        </p>
+      </section>
+      <section class="booking wrap" id="booking">
+        <div class="form-panel">
+          <form id="request">
+            <h2>Your details</h2>
+            <div class="fields">
+              <label
+                >Full name<input
+                  name="name"
+                  autocomplete="name"
+                  required
+                  maxlength="100"
+                />
+              </label>
+              <label
+                >Phone number<input
+                  name="phone"
+                  autocomplete="tel"
+                  type="tel"
+                  required
+                  maxlength="26"
+                />
+              </label>
+              <label class="wide"
+                >Email address<input
+                  name="email"
+                  autocomplete="email"
+                  type="email"
+                  required
+                />
+              </label>
+            </div>
+            <h2>Your visit</h2>
+            <div class="fields">
+              <label
+                >Service category<select name="category" required></select>
+              </label>
+              <label
+                >Selected service<select name="service" required></select>
+              </label>
+              <label
+                >Preferred date<input type="date" name="date" required />
+              </label>
+              <label
+                >Preferred time<input type="time" name="time" required />
+              </label>
+              <label class="wide"
+                >Additional notes (optional)<textarea
+                  rows="3"
+                  name="notes"
+                  maxlength="1500"
+                ></textarea>
+              </label>
+            </div>
+            <button class="btn">Review request</button>
+          </form>
+          <section id="review" hidden tabindex="-1">
+            <h2 id="review-title">Review your request</h2>
+            <p id="review-status"></p>
+            <dl></dl>
+            <div class="actions">
+              <button class="btn" id="finalize">Prepare request</button>
+              <button class="btn outline" id="edit">Edit details</button>
+              <button class="btn" id="download" hidden>Download details</button>
+            </div>
+          </section>
+        </div>
+        <aside>
+          <h2>Before your visit</h2>
+          <p>
+            Have a reference photo or an occasion in mind? Include the details
+            in your notes.
+          </p>
+          <details>
+            <summary>Is my preferred time confirmed?</summary>
+            <p>
+              The form prepares a request on your device. Contact the salon
+              directly to agree on a time.
+            </p>
+          </details>
+          <details>
+            <summary>How is the price agreed?</summary>
+            <p>
+              Menu prices are indicative. Discuss length, products and styling
+              needs with the salon before your appointment.
+            </p>
+          </details>
+          <div id="contact-info"></div>
+        </aside>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
