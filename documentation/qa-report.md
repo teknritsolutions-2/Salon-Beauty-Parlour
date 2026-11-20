@@ -176,3 +176,9 @@ Chromium and WebKit each passed 26 responsive/theme/direction cases across 320, 
 Replaced the left Home 1 banner photograph with a smiling woman hairstylist beside a salon chair in a bright salon. The image retains its 1000 × 1400 dimensions and has an updated descriptive alt and cache version. The source credit is recorded in asset-credits.md. All 31 photographs retain distinct sources and file hashes.
 
 Chromium passed 26 responsive/theme/direction cases at 320–1440px with matching image proportions, no overlaps or horizontal overflow and working hero actions. Phone and tablet screenshots were visually inspected.
+
+## Editorial stylist portrait — 20 November 2026
+
+Replaced the left Home 1 hero image with Kamil Rybarski’s portrait of a woman dressed in black, seated in a salon chair holding scissors. The 1000 × 1400 image preserves her full hairstyle and tools. Updated the image alternative text, cache version and source credit. All 31 photographs remain distinct by source and file hash.
+
+Chromium passed 26 responsive/theme/direction cases from 320–1440px, with no overflow or overlaps and matched natural-ratio photographs. Tablet composition and final crop were visually inspected.
