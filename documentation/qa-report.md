@@ -146,3 +146,9 @@ The component supports pointer/touch selection, Up/Down, Home/End, type-ahead, E
 Chromium and WebKit each passed 20 width/theme/direction cases at 320, 360, 390, 430, 768, 820, 960, 1024, 1280 and 1440 pixels in light LTR and dark RTL. Checks covered exact menu/trigger alignment, menu width, viewport containment, above-field placement, arrow inset, readable option text, touch targets and dynamic service choices. Both engines passed keyboard selection, required-select validation, preselection, review/edit/download and dismissal checks.
 
 Additional real touch-event emulation checks passed in both engines for category/service selection, open-menu relocation on resize and form reset display synchronization. Mobile and tablet screenshots were inspected in both engines. The desktop Home dropdown and compact drawer retain their existing implementations. Testing used browser engines and emulated viewports rather than physical phones.
+
+## Home 1 banner composition redesign — 20 November 2026
+
+Replaced the desktop full-background text overlay with a twelve-column editorial composition. The large photograph occupies the leading side and an opaque text panel overlaps its lower trailing edge. Typography and actions now sit on a light neutral surface, with a charcoal counterpart in dark mode. The added category navigation strip and its styles were removed.
+
+The compact banner retains the previously requested centered photographic treatment. Twenty width/theme/direction cases passed, with desktop screenshots inspected at 1280 and 1440 pixels and compact screenshots inspected at phone/tablet widths. Both main actions returned successful responses. No horizontal overflow or runtime errors were recorded.

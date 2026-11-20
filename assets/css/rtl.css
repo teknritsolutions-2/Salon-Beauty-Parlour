@@ -24,21 +24,10 @@
   }
 }
 
-[dir="rtl"] .hero::after {
-  background: linear-gradient(
-    270deg,
-    #0c1115e8 0%,
-    #0c1115b8 36%,
-    #0c11151a 77%
-  );
-}
 [dir="rtl"] .pricing-intro .filters button[aria-pressed="true"] {
   box-shadow: inset -3px 0 var(--accent);
 }
 @media (max-width: 1150px) {
-  [dir="rtl"] .hero::after {
-    background: linear-gradient(0deg, #0c1115d9, #0c11159c 55%, #0c111580);
-  }
   [dir="rtl"] .hero :is(h1, p) {
     text-align: center;
   }

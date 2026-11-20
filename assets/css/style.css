@@ -889,103 +889,60 @@ footer nav h2 {
 .picture-card p {
   font-size: 1rem;
 }
+
 .hero {
   position: relative;
   isolation: isolate;
   display: grid;
-  grid-template-rows: 1fr auto;
-  min-height: clamp(550px, 46vw, 660px);
-  padding: 0;
-  margin-top: 24px;
-  overflow: hidden;
-  background: #17191b;
-  color: #fff;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: 56px minmax(420px, auto) 48px;
+  margin-top: 32px;
 }
 .hero-photo {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
+  position: relative;
+  grid-column: 1 / 9;
+  grid-row: 1 / 3;
+  overflow: hidden;
+  min-width: 0;
+  min-height: 0;
 }
 .hero-photo img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center 15%;
 }
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(
-    90deg,
-    #0c1115e8 0%,
-    #0c1115b8 36%,
-    #0c11151a 77%
-  );
-}
 .hero-heading {
+  position: relative;
+  z-index: 1;
+  grid-column: 8 / -1;
+  grid-row: 2 / 4;
   display: grid;
+  align-content: center;
   gap: 1.25rem;
-  align-self: center;
-  max-width: 700px;
-  padding: clamp(32px, 4.5vw, 64px);
+  padding: clamp(30px, 3.2vw, 48px);
+  border: 1px solid var(--line);
+  background: var(--surface);
 }
 .hero h1 {
-  font-size: clamp(4rem, 6.6vw, 6.8rem);
+  font-size: clamp(3.8rem, 5.8vw, 5.8rem);
+  line-height: 0.98;
   letter-spacing: -0.025em;
-  line-height: 0.96;
+}
+.hero h1 em {
+  color: var(--accent);
 }
 .hero .eyebrow {
-  color: #d0e9f6;
   margin-bottom: 1rem;
 }
 .hero-intro > p {
-  color: #f4f7f9;
-  max-width: 40ch;
+  max-width: 37ch;
   margin-bottom: 1.5rem;
   font-size: 1.125rem;
 }
-.hero .outline {
-  border-color: #f4f7f9;
-  color: #fff;
-}
 
-.hero h1 em {
-  color: #c7e5f4;
-}
-.hero-categories {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  background: #0c1115aa;
-  border-top: 1px solid #ffffff40;
-}
-.hero-categories a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1.1rem 1.25rem;
-  color: #fff;
-}
-.hero-categories a + a {
-  border-inline-start: 1px solid #ffffff40;
-}
-.hero-categories span {
-  font: 400 1.8rem/1.2 var(--serif);
-}
-.hero-categories small {
-  font-size: 0.875rem;
-  color: #e2e9ed;
-  line-height: 1.4;
-}
-.hero-categories a:hover,
-.hero-categories a:focus-visible {
-  background: #ffffff17;
-}
-.hero-categories a:hover span {
-  color: #c7e5f4;
-}
 .experience {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1628,66 +1585,12 @@ footer nav h2 {
     border: 1px solid var(--line);
   }
 }
-@media (max-width: 1150px) {
-  .hero {
-    width: 100%;
-    margin-top: 0;
-    padding: 0;
-    min-height: 610px;
-    justify-content: stretch;
-    text-align: center;
-  }
-  .hero-heading {
-    width: 100%;
-    max-width: 700px;
-    justify-self: center;
-    justify-items: center;
-    padding: clamp(32px, 5vw, 56px);
-  }
-  .hero::after {
-    background: linear-gradient(0deg, #0c1115d9, #0c11159c 55%, #0c111580);
-  }
-  .hero-photo img {
-    object-position: 70% 15%;
-  }
-  .hero .eyebrow,
-  .hero .actions {
-    justify-content: center;
-  }
-  .hero-intro > p {
-    margin-inline: auto;
-  }
-  .hero h1 {
-    font-size: clamp(3.5rem, 7vw, 5.5rem);
-  }
-}
+
 @media (max-width: 640px) {
   body {
     font-size: 1rem;
   }
-  .hero {
-    min-height: 610px;
-    padding: 0;
-  }
-  .hero h1 {
-    font-size: clamp(3.2rem, 12vw, 4.8rem);
-  }
-  .hero-intro > p {
-    font-size: 1rem;
-  }
-  .hero .eyebrow {
-    font-size: 0.8125rem;
-    letter-spacing: 0.05em;
-  }
-  .hero .actions {
-    gap: 0.7rem;
-  }
-  .hero .btn {
-    padding: 0.75rem 1rem;
-  }
-  .hero-photo img {
-    object-position: 71% top;
-  }
+
   .experience {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -1991,28 +1894,6 @@ footer nav h2 {
   }
 }
 
-@media (max-width: 800px) {
-  .hero-categories a {
-    flex-direction: column;
-    gap: 0.3rem;
-    padding: 0.95rem 0.6rem;
-  }
-}
-@media (max-width: 640px) {
-  .hero-heading {
-    padding: 2.5rem var(--gutter);
-  }
-  .hero-categories small {
-    display: none;
-  }
-  .hero-categories span {
-    font-size: 1.5rem;
-  }
-  .hero-categories a {
-    min-height: 60px;
-  }
-}
-
 .contact-location {
   padding-bottom: clamp(48px, 5vw, 72px);
   scroll-margin-top: 110px;
@@ -2172,4 +2053,92 @@ footer nav h2 {
 .select-error {
   color: var(--ink);
   font-size: 0.9375rem;
+}
+
+@media (max-width: 1150px) {
+  .hero {
+    width: 100%;
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    min-height: 570px;
+    text-align: center;
+  }
+  .hero-photo {
+    position: absolute;
+    inset: 0;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: -2;
+  }
+  .hero-photo img {
+    object-position: 70% 15%;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(0deg, #0c1115d9, #0c11159c 55%, #0c111580);
+  }
+  .hero-heading {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    width: min(100%, 700px);
+    justify-items: center;
+    padding: clamp(32px, 5vw, 56px);
+    border: 0;
+    background: transparent;
+    color: #fff;
+  }
+  .hero h1 {
+    font-size: clamp(3.5rem, 7vw, 5.5rem);
+  }
+  .hero h1 em {
+    color: #c7e5f4;
+  }
+  .hero .eyebrow,
+  .hero .actions {
+    justify-content: center;
+  }
+  .hero .eyebrow {
+    color: #d0e9f6;
+  }
+  .hero-intro > p {
+    color: #f4f7f9;
+    margin-inline: auto;
+  }
+  .hero .outline {
+    border-color: #f4f7f9;
+    color: #fff;
+  }
+}
+@media (max-width: 640px) {
+  .hero {
+    min-height: 570px;
+  }
+  .hero-heading {
+    padding: 2.5rem var(--gutter);
+  }
+  .hero h1 {
+    font-size: clamp(3.2rem, 12vw, 4.8rem);
+  }
+  .hero-intro > p {
+    font-size: 1rem;
+  }
+  .hero .eyebrow {
+    font-size: 0.8125rem;
+    letter-spacing: 0.05em;
+  }
+  .hero .actions {
+    gap: 0.7rem;
+  }
+  .hero .btn {
+    padding: 0.75rem 1rem;
+  }
+  .hero-photo img {
+    object-position: 71% top;
+  }
 }
