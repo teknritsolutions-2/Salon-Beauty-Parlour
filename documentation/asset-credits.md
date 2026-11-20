@@ -55,3 +55,12 @@ These additional photographs are licensed for use under the [Pexels License](htt
 | gallery-hair.webp | Round brush blow-dry | [Daniil Kondrashin](https://www.pexels.com/photo/14615063/) |
 | gallery-wash.webp | Shampoo lather at a black basin | [cottonbro studio](https://www.pexels.com/photo/3993444/) |
 | gallery-curls.webp | Black-and-white portrait with long dark curls | [Daniel Neves](https://www.pexels.com/photo/26888713/) |
+
+## About photography
+
+The About page uses two reference photographs under the [Pexels License](https://www.pexels.com/license/).
+
+| Local asset | Subject | Photographer and original photograph |
+| --- | --- | --- |
+| about-studio.webp | A stylist working beside carved wood-framed salon mirrors | [Asad Photo Maldives](https://www.pexels.com/photo/woman-standing-in-front-of-woman-sitting-on-chair-inside-room-1654834/) |
+| about-care.webp | A salon professional speaking with a visitor at reception | [Kampus Production](https://www.pexels.com/photo/hair-dresser-and-a-client-talking-inside-a-salon-8834028/) |

@@ -1,6 +1,6 @@
 # CIELVANE — Salon & Beauty Studio
 
-A six-page static salon website built with HTML, CSS and native JavaScript modules. All fonts and photographs are served from the project.
+A seven-page static salon website built with HTML, CSS and native JavaScript modules. All fonts and photographs are served from the project.
 
 CIELVANE is a proposed working brand. Trademark and domain availability have not been verified.
 
@@ -16,6 +16,7 @@ From the project root, run `python3 -m http.server 8000 --bind 127.0.0.1`. Open 
 | --- | --- |
 | Main homepage | `index.html` |
 | Occasion-based homepage | `pages/home2.html` |
+| About the studio | `pages/about.html` |
 | Services | `pages/services.html` |
 | Pricing menu | `pages/pricing.html` |
 | Inspiration gallery | `pages/gallery.html` |

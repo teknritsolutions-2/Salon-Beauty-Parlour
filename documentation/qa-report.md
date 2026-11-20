@@ -104,3 +104,13 @@ Every replacement was decoded and compared against the corresponding original fi
 Browser verification found 28 photo placements with 28 unique source URLs across the six pages. All 28 WebP files have unique SHA-256 hashes. Source IDs and photographer credits are recorded in asset-credits.md. No unused photograph files were added.
 
 Services and Gallery were inspected at 320, 390, 768, 820, 1024 and 1440 pixels. The audit checked successful decoding, image proportions, captions, no horizontal overflow, Hair filtering and matching thumbnail-to-lightbox selection, next navigation and keyboard dismissal. No runtime errors or failed asset responses were recorded. The replacement makeup crop was separately inspected at 320 pixels. The release is checked on the existing live Pages URL after publication.
+
+## About page — 20 November 2026
+
+Added pages/about.html with an introduction, a three-part studio approach, hair/skin/makeup discovery links and first-visit guidance with pricing and appointment actions. Copy describes the brand's approach and preparation process. Two new licensed reference photographs are exclusive to this page.
+
+The page uses the existing serif/sans-serif pairing, cloud-and-sky tokens, shared header, physical-left drawer, footer, theme/direction preferences and back-to-top control. About is linked after Home in the desktop menu, in the compact drawer and in the footer Explore group. Shared footer destinations now resolve by page key to preserve their intended links as the navigation expands.
+
+Browser checks passed 44 About width/theme/direction combinations at 320, 360, 390, 430, 768, 820, 960, 1024, 1180, 1280 and 1440 pixels. Checks covered successful image decoding, no horizontal overflow, one page heading, active About links, compact navigation, physical-left drawer placement, utility interaction, desktop navigation spacing and non-wrapping links. All About content links returned successful responses and the Hair action opened the filtered Services page.
+
+About links were verified in the header and footer of each of the existing six pages. Full-page screenshots were inspected at mobile, tablet and desktop sizes in light/dark and LTR/RTL. The tablet care section was recomposed to avoid a small photograph beside an overly tall text column. All 30 photographic placements across the seven pages have distinct source URLs and unique files. The existing 13 dimension-matched replacements still retain their exact pixel sizes.

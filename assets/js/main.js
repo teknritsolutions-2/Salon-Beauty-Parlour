@@ -5,6 +5,7 @@ const root = page === "index" ? "./" : "../";
 const links = [
   ["index", "Home 1"],
   ["home2", "Home 2"],
+  ["about", "About"],
   ["services", "Services"],
   ["pricing", "Pricing Menu"],
   ["gallery", "Gallery"],
@@ -25,7 +26,15 @@ const menuIcon = icon('<path d="M3 6h18M3 12h18M3 18h18"/>');
 document.querySelector("header").innerHTML =
   `<div class="wrap bar">${brand}<nav class="desktop" aria-label="Main"><details class="home-menu"><summary ${["index", "home2"].includes(page) ? 'class="active"' : ""}>Home</summary><div>${links.slice(0, 2).map(navLink).join("")}</div></details>${links.slice(2).map(navLink).join("")}</nav><div class="utilities"><div id="appearance"><button class="icon" id="theme" aria-label="Dark theme" title="Dark theme">${moon}</button><button class="icon" id="direction" aria-label="Right-to-left layout" title="Right-to-left layout">RTL</button></div><div id="booking-action">${booking}</div><button class="icon" id="open-nav" aria-label="Open navigation" aria-controls="drawer" aria-expanded="false">${menuIcon}</button></div></div>`;
 document.querySelector("footer").innerHTML =
-  `<div class="wrap footer-inner"><div class="footer-brand">${brand}<p>Thoughtful hair, skin and makeup.<br>A little room for yourself.</p></div><nav aria-label="Explore"><h2>Explore</h2>${[links[0], links[1], links[4]].map(navLink).join("")}</nav><nav aria-label="Treatments"><h2>Treatments</h2>${[links[2], links[3]].map(navLink).join("")}</nav><nav aria-label="Appointments"><h2>Appointments</h2>${navLink(links[5])}<a href="${url("contact")}#booking">Book appointment</a></nav></div><div class="wrap footer-bottom"><span>© ${new Date().getFullYear()} CIELVANE</span><span>Hair · Skin · Makeup</span></div>`;
+  `<div class="wrap footer-inner"><div class="footer-brand">${brand}<p>Thoughtful hair, skin and makeup.<br>A little room for yourself.</p></div><nav aria-label="Explore"><h2>Explore</h2>${links
+    .filter(([key]) => ["index", "home2", "about", "gallery"].includes(key))
+    .map(navLink)
+    .join("")}</nav><nav aria-label="Treatments"><h2>Treatments</h2>${links
+    .filter(([key]) => ["services", "pricing"].includes(key))
+    .map(navLink)
+    .join(
+      "",
+    )}</nav><nav aria-label="Appointments"><h2>Appointments</h2>${navLink(links.find(([key]) => key === "contact"))}<a href="${url("contact")}#booking">Book appointment</a></nav></div><div class="wrap footer-bottom"><span>© ${new Date().getFullYear()} CIELVANE</span><span>Hair · Skin · Makeup</span></div>`;
 document.body.insertAdjacentHTML(
   "beforeend",
   `<dialog id="drawer" aria-label="Navigation"><div class="line">${brand}<button class="icon close" aria-label="Close navigation">×</button></div><nav aria-label="Compact navigation">${links.map(navLink).join("")}</nav><section class="drawer-appearance"><h2>Appearance</h2><div id="drawer-appearance"></div></section><div id="drawer-action"></div></dialog><button class="top icon" hidden aria-label="Back to top">↑</button>`,
