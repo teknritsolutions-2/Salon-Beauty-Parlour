@@ -7,7 +7,7 @@ The site uses licensed salon and beauty reference photography. Each local WebP u
 | Local asset | Subject | Photographer and original photograph |
 | --- | --- | --- |
 | hero.webp | Styling soft curls | [cottonbro studio](https://www.pexels.com/photo/satisfied-woman-with-her-new-hairstyle-3993463/) |
-| banner.webp | A hairdresser posing behind a salon chair with scissors and a comb | [Kampus Production](https://www.pexels.com/photo/woman-in-black-long-sleeve-shirt-holding-a-scissor-8834027/) |
+| banner.webp | A smiling hair stylist in a floral dress beside a salon chair | [Daniel & Hannah Snipes](https://www.pexels.com/photo/portrait-of-smiling-female-entrepreneur-in-salon-33867516/) |
 | hero-finish.webp | A bridal portrait with a centre part and swept-back hair | [Vladimir Konoplev](https://www.pexels.com/photo/portrait-of-bride-in-elegant-updo-11813979/) |
 | look-skin.webp | Facial massage close-up | [Gustavo Fring](https://www.pexels.com/photo/3985310/) |
 | occasion-skin.webp | Facial treatment setting | [Gustavo Fring](https://www.pexels.com/photo/7446670/) |

@@ -170,3 +170,9 @@ Tablets from 641–1150px now use the desktop photo–headline–photo arrangeme
 The left photograph now shows a woman hairdresser facing the camera behind a salon chair with scissors and a comb. The replacement remains 1000 × 1400 pixels, preserves her full hairstyle and both tools, and has a distinct source and file hash. Its source is documented in asset-credits.md.
 
 Chromium and WebKit each passed 26 responsive/theme/direction cases across 320, 390, 430, 641, 700, 768, 820, 960, 1024, 1150, 1151, 1280 and 1440px in light LTR and dark RTL. Tests verified the three-column tablet arrangement, phone stacking, equal natural-ratio images, no text/photo overlap, no horizontal overflow and both main actions. Tablet screenshots at 768, 820 and 1024px and the desktop composition were inspected. Versioned stylesheet and image URLs ensure the revised tablet styles and portrait load together.
+
+## Left hero portrait replacement — 20 November 2026
+
+Replaced the left Home 1 banner photograph with a smiling woman hairstylist beside a salon chair in a bright salon. The image retains its 1000 × 1400 dimensions and has an updated descriptive alt and cache version. The source credit is recorded in asset-credits.md. All 31 photographs retain distinct sources and file hashes.
+
+Chromium passed 26 responsive/theme/direction cases at 320–1440px with matching image proportions, no overlaps or horizontal overflow and working hero actions. Phone and tablet screenshots were visually inspected.
