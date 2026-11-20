@@ -45,6 +45,24 @@ export const menu = [
     detail: "A short cleansing and exfoliating ritual for a simple refresh.",
   },
   {
+    id: "calming-facial",
+    category: "Skin",
+    name: "Calming facial ritual",
+    minutes: 45,
+    price: 1200,
+    detail:
+      "Gentle cleansing and moisturizing, with time to relax in a salon setting.",
+  },
+  {
+    id: "natural-day",
+    category: "Makeup",
+    name: "Natural day makeup",
+    minutes: 45,
+    price: 1800,
+    detail:
+      "Light coverage and softly defined features for daytime occasions or a subtle everyday finish.",
+  },
+  {
     id: "party",
     category: "Makeup",
     name: "Soft glam makeup",

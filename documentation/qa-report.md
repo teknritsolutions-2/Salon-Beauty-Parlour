@@ -62,3 +62,31 @@ At 1150 pixels and below, the header contains only the brand and hamburger, with
 The dedicated navigation suite passed 72 page/width combinations across all six pages and all 12 requested widths. It verified header contents, unique control IDs, utility placement, theme/direction changes while the drawer stays open, physical-left placement in both directions, scroll locking, Escape and close behavior, focus restoration and utility relocation after resizing between compact and desktop. New FAQ disclosures and catalogue-based treatment prices, durations and booking links also passed. The existing 78-combination workflow regression and the 288-combination theme/direction matrix passed. Full-page screenshots were inspected on mobile, tablet and desktop, together with compact drawer screenshots.
 
 The palette, fonts, footer structure, Services, Pricing, Gallery and Contact workflows remain the existing implementation. No new photography was needed for this finishing pass.
+
+## Typography, homepage and price-menu refinement — 20 November 2026
+
+This pass uses the published 92a3245 revision as its preserved baseline. The CIELVANE identity, font families, sky palette, footer and physical HTML architecture remain the basis of the implementation.
+
+Desktop paragraphs now inherit 17px text, with 16px on phones. Eyebrows use 14px, service/card supporting text uses 16–17px, important durations/captions use approximately 15px, and footer supporting text uses 15–17px. The brand descriptor is 11px in compact layouts. Buttons, navigation and form labels retain their readable role-specific sizes.
+
+Home 1 now has a photographic banner with a restrained directional gradient on desktop. At 1150px and below, the semantic photograph fills the hero and its heading, supporting paragraph and CTAs center over a dark gradient. Separate image cropping is set for phones. Experience is a three-part Discover/Personalize/Prepare sequence beside the styling photograph. Beauty Details combines a natural portrait with concise Tone/Texture/Finish notes. The four original appointment FAQ questions remain in a full-width panel with visible expanded states.
+
+Home 2 uses aligned occasion articles, equal-ratio editorial photo containers with a deliberate phone reflow, a more proportionate inspiration image and a three-part appointment-planning sequence. Its dynamic Popular Treatment Choices retains catalogue-based values with larger metadata and clearer row spacing.
+
+The shared dataset now contains three Hair, three Skin and three Makeup treatments. The added illustrative services are Calming Facial Ritual, approximately 45 minutes from INR 1,200, and Natural Day Makeup, approximately 45 minutes from INR 1,800. Existing seven IDs remain unchanged. Offerings and rates require salon approval.
+
+Services and Pricing use separate render functions in catalog.js. Pricing has a category-navigation introduction beside dedicated price-menu panels, prominent INR amounts, approximate durations, service-description links and booking actions. The sidebar becomes horizontal category controls on smaller tablets and phones, and rows stack on phones. The existing price-factor explanation and appointment CTA remain.
+
+The desktop appearance group explicitly uses flex alignment. Theme and direction buttons have equal 44px hit areas with centered contents. The compact hamburger has a 48px target and 24px icon. Utility nodes still relocate into the physical-left drawer at the existing compact breakpoint.
+
+### Verification performed
+
+- All six pages passed 264 combinations across 320, 360, 390, 430, 768, 820, 960, 1024, 1180, 1280 and 1440 pixels, light/dark and LTR/RTL. Tests checked horizontal overflow, compact header contents, desktop utility alignment and centered background-photo hero behavior throughout the compact range.
+- Full-page screenshots were inspected at 390, 820 and 1440 pixels, including dark and RTL states. Separate 320px phone and 1024px tablet hero captures verified framing and centered text. The larger descriptor and open compact drawer were visually inspected.
+- The functional suite verified all nine shared entries, balanced category counts and preservation of the original IDs. All 18 booking links from Services and Pricing were opened and checked for correct service/category selection.
+- Both new treatments were exercised through Contact. Tests covered invalid fields and past dates, Natural Day Makeup review, editing to Calming Facial Ritual, preparing the request and opening the downloaded text to confirm the treatment and INR 1,200 amount.
+- Services/Pricing category filters, Pricing-to-Services links, Gallery category filtering, lightbox next/keyboard/close behavior, all four homepage FAQ disclosures, desktop Home dropdown/Escape, compact drawer behavior, preference persistence across reload, sticky header and back-to-top passed.
+- Additional controls checks passed at all 11 widths. They checked brand/hamburger separation, brand/close-control fit in both reading directions, equal desktop utility dimensions and vertical alignment before/after toggles, physical-left drawer placement and focus restoration.
+- No browser JavaScript exceptions or unsuccessful asset responses were recorded during the matrix. The final release is verified on the existing GitHub Pages URL after publication.
+
+Verification uses Brave/Chromium. Physical devices, Safari and Firefox were not independently tested. Appointment requests continue to require salon confirmation and an approved production delivery/scheduling integration.

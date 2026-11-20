@@ -20,7 +20,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font: 1rem/1.55 var(--sans);
+  font: 1.0625rem/1.6 var(--sans);
 }
 a {
   color: inherit;
@@ -136,9 +136,9 @@ header {
 }
 .brand small {
   display: block;
-  font: 600 0.63rem/1.7 var(--sans);
+  font: 600 0.6875rem/1.6 var(--sans);
   text-transform: uppercase;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
 }
 .desktop {
   gap: clamp(16px, 1.8vw, 34px);
@@ -246,7 +246,7 @@ footer nav a:hover {
   display: flex;
   align-items: center;
   gap: 0.65rem;
-  font: 650 0.78rem/1.5 var(--sans);
+  font: 650 0.875rem/1.5 var(--sans);
   color: var(--accent);
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -424,7 +424,7 @@ footer nav {
   max-width: 53ch;
 }
 .service-row small {
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   color: var(--muted);
 }
 .service-cost {
@@ -493,7 +493,7 @@ footer nav {
   flex-direction: column;
   align-items: start;
   border-top: 1px solid var(--line);
-  padding-top: 1.25rem;
+  padding-top: 1.5rem;
 }
 .occasion p {
   margin: 0.6rem 0 1rem;
@@ -529,7 +529,7 @@ footer nav {
   color: var(--ink);
   border-radius: 2px;
   padding: 0.25rem 0.8rem;
-  font-size: 0.85rem;
+  font-size: 0.9375rem;
 }
 dialog {
   color: var(--ink);
@@ -681,7 +681,7 @@ footer nav h2 {
   gap: 1rem;
   border-top: 1px solid #ffffff26;
   padding-block: 1rem;
-  font-size: 0.85rem;
+  font-size: 0.9375rem;
   color: var(--muted);
 }
 .lookbook {
@@ -701,7 +701,7 @@ footer nav h2 {
 .lookbook-grid span {
   display: block;
   padding-top: 0.7rem;
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   color: var(--muted);
 }
 .lookbook-grid a:hover span {
@@ -745,92 +745,14 @@ footer nav h2 {
   letter-spacing: 0.04em;
   direction: ltr;
 }
-.hero {
-  padding-block: 2.5rem 0;
-}
-.hero-heading {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  align-items: end;
-  gap: 3rem;
-  padding-bottom: 2rem;
-}
-.hero h1 {
-  font-size: clamp(3.8rem, 6.8vw, 6.6rem);
-  letter-spacing: -0.025em;
-  line-height: 0.98;
-}
-.hero-intro > p {
-  max-width: 40ch;
-  margin-bottom: 1.2rem;
-}
-.hero-photo img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 2;
-  object-fit: cover;
-  object-position: center top;
-}
-.experience {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  align-items: start;
-  gap: clamp(24px, 4vw, 56px);
-  padding-bottom: clamp(48px, 5vw, 72px);
-}
-.experience-copy > p:not(.eyebrow) {
-  margin-top: 1rem;
-  max-width: 48ch;
-}
-.experience-copy .text-link {
-  display: inline-block;
-  margin-top: 1.2rem;
-}
-.experience > img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1.15;
-  object-fit: cover;
-  object-position: 50% 24%;
-}
-.beauty-detail {
-  display: grid;
-  grid-template-columns: minmax(210px, 0.7fr) 1.3fr;
-  align-items: center;
-  gap: clamp(24px, 4vw, 56px);
-  padding-bottom: clamp(48px, 5vw, 72px);
-}
-.beauty-detail > img {
-  width: 100%;
-  height: auto;
-  max-width: 310px;
-  justify-self: center;
-}
-.beauty-detail p:not(.eyebrow) {
-  max-width: 45ch;
-  margin: 1.3rem 0;
-}
-.occasion-edit {
-  display: grid;
-  grid-template-columns: 0.667fr 1.5fr 0.741fr;
-  gap: 1.5rem;
-  align-items: start;
-  margin-bottom: clamp(48px, 5vw, 72px);
-}
-.occasion-edit-heading {
-  grid-column: 1 / -1;
-  padding: 0;
-}
+
 .occasion-edit-heading p:last-child {
   margin-top: 1rem;
 }
 .occasion-edit a {
   display: block;
 }
-.occasion-edit img {
-  width: 100%;
-  height: auto;
-}
+
 .occasion-edit span {
   display: block;
   margin-top: 0.65rem;
@@ -840,18 +762,7 @@ footer nav h2 {
   color: var(--accent);
   text-decoration: underline;
 }
-.edit-hair {
-  grid-column: 1;
-  grid-row: 2;
-}
-.edit-skin {
-  grid-column: 2;
-  grid-row: 2;
-}
-.edit-makeup {
-  grid-column: 3;
-  grid-row: 2;
-}
+
 .planning-guide p {
   margin-bottom: 1.1rem;
 }
@@ -938,26 +849,7 @@ footer nav h2 {
   width: 100%;
   margin-top: 1.5rem;
 }
-.appointment-faq {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: clamp(24px, 4vw, 56px);
-  padding-block: 0 3.5rem;
-}
-.appointment-faq h2 {
-  font-size: clamp(2.4rem, 3.8vw, 3.8rem);
-}
-.appointment-faq details {
-  border-top: 1px solid var(--line);
-  padding-block: 1rem;
-}
-.appointment-faq summary {
-  font-weight: 600;
-  cursor: pointer;
-}
-.appointment-faq details p {
-  margin-top: 0.75rem;
-}
+
 .popular {
   border-top: 1px solid var(--line);
 }
@@ -969,18 +861,412 @@ footer nav h2 {
 }
 .popular-row {
   display: grid;
-  grid-template-columns: 1fr auto auto;
-  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: clamp(20px, 3vw, 44px);
   align-items: center;
   border-top: 1px solid var(--line);
-  padding-block: 1.25rem;
+  padding-block: 1.5rem;
 }
 .treatment-meta {
-  font-size: 0.9rem;
+  font-size: 0.9375rem;
   margin-bottom: 0.35rem;
 }
 .popular-row strong {
+  font-size: 1.25rem;
   white-space: nowrap;
+}
+
+#appearance {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+#theme,
+#direction {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  padding: 0;
+  line-height: 1;
+}
+#theme svg {
+  display: block;
+}
+#open-nav {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  padding: 0;
+}
+#open-nav svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.8;
+}
+.picture-card p {
+  font-size: 1rem;
+}
+.hero {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: clamp(510px, 43vw, 620px);
+  padding: clamp(32px, 5vw, 72px);
+  margin-top: 24px;
+  overflow: hidden;
+  background: #17191b;
+  color: #fff;
+}
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    #0c1115e8 0%,
+    #0c1115b8 36%,
+    #0c11151a 77%
+  );
+}
+.hero-heading {
+  display: grid;
+  gap: 1.3rem;
+  max-width: 580px;
+}
+.hero h1 {
+  font-size: clamp(3.8rem, 6.3vw, 6rem);
+  letter-spacing: -0.025em;
+  line-height: 0.98;
+}
+.hero .eyebrow {
+  color: #d0e9f6;
+  margin-bottom: 1rem;
+}
+.hero-intro > p {
+  color: #f4f7f9;
+  max-width: 40ch;
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+}
+.hero .outline {
+  border-color: #f4f7f9;
+  color: #fff;
+}
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 4%;
+  padding-bottom: clamp(48px, 5vw, 72px);
+}
+.experience-heading {
+  grid-column: 1 / -1;
+  align-items: end;
+}
+.experience-heading h2 {
+  font-size: clamp(2.5rem, 4.3vw, 4.25rem);
+  max-width: 17ch;
+}
+.experience-heading .text-link {
+  flex-shrink: 0;
+}
+.experience > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.2;
+  object-fit: cover;
+  object-position: 50% 23%;
+}
+.experience-sequence {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  align-content: center;
+}
+.experience-sequence li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.25rem;
+  padding-block: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+.experience-sequence li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.experience-sequence span {
+  font-size: 0.9375rem;
+  color: var(--accent);
+  padding-top: 0.3rem;
+}
+.experience-sequence h3 {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+.experience-sequence p {
+  max-width: 38ch;
+}
+.beauty-detail {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: center;
+  gap: clamp(24px, 4vw, 56px);
+  padding: clamp(24px, 3vw, 44px);
+  margin-bottom: clamp(48px, 5vw, 72px);
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+.beauty-detail > img {
+  width: 100%;
+  height: auto;
+  max-width: 390px;
+  justify-self: center;
+}
+.beauty-detail h2 {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+}
+.beauty-detail p:not(.eyebrow) {
+  margin-block: 1rem;
+}
+.detail-notes {
+  display: block;
+  margin: 1.4rem 0;
+}
+.detail-notes > div {
+  display: grid;
+  grid-template-columns: 85px 1fr;
+  gap: 1rem;
+  padding-block: 0.7rem;
+  border-top: 1px solid var(--line);
+}
+.detail-notes dt {
+  font-size: 1rem;
+}
+.detail-notes dd {
+  color: var(--muted);
+  white-space: normal;
+}
+.appointment-faq {
+  padding: clamp(24px, 3vw, 44px);
+  margin-bottom: 3.5rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+.appointment-faq > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 0.75rem 2rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.appointment-faq .eyebrow {
+  flex-basis: 100%;
+  margin-bottom: 0;
+}
+.appointment-faq h2 {
+  font-size: clamp(2.5rem, 4vw, 3.8rem);
+}
+.appointment-faq > div:first-child > p:last-child {
+  max-width: 31ch;
+}
+.appointment-faq details {
+  border-top: 1px solid var(--line);
+  padding: 1.1rem 0.75rem;
+}
+.appointment-faq details:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.appointment-faq details[open] {
+  background: var(--subtle);
+}
+.appointment-faq summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  list-style: none;
+}
+.appointment-faq summary::-webkit-details-marker {
+  display: none;
+}
+.appointment-faq summary::after {
+  content: "+";
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.appointment-faq details[open] summary::after {
+  content: "−";
+}
+.appointment-faq details p {
+  margin-top: 0.8rem;
+  max-width: 75ch;
+}
+.occasion-edit {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: clamp(48px, 5vw, 72px);
+}
+.occasion-edit-heading {
+  grid-column: 1 / -1;
+}
+.occasion-edit img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+.edit-skin img {
+  object-position: 43% center;
+}
+.inspiration {
+  grid-template-columns: 1fr 1fr;
+  gap: 4%;
+}
+.inspiration > img {
+  aspect-ratio: 1.35;
+  object-position: center 40%;
+}
+.planning-guide ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+.planning-guide li {
+  border-top: 1px solid var(--line);
+  padding-block: 1rem;
+}
+.planning-guide h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+.planning-guide li p {
+  margin: 0;
+}
+.pricing-layout {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.8fr) 2fr;
+  gap: clamp(30px, 5vw, 80px);
+  align-items: start;
+  padding-block: clamp(40px, 5vw, 75px);
+}
+.pricing-intro {
+  position: sticky;
+  top: 110px;
+}
+.pricing-intro h1 {
+  font-size: clamp(3.5rem, 5vw, 5.5rem);
+  margin-bottom: 1.4rem;
+}
+.pricing-intro > p {
+  margin-bottom: 1.5rem;
+  max-width: 29ch;
+}
+.pricing-intro .filters {
+  display: grid;
+  gap: 0;
+  margin-bottom: 1.5rem;
+}
+.pricing-intro .filters button {
+  text-align: start;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  padding: 0.85rem 1rem;
+  background: transparent;
+  font-size: 1rem;
+}
+.pricing-intro .filters button[aria-pressed="true"] {
+  background: var(--subtle);
+  color: var(--accent);
+  box-shadow: inset 3px 0 var(--accent);
+  font-weight: 600;
+}
+.pricing-intro .pricing-note {
+  font-size: 0.9375rem;
+}
+.price-menu {
+  min-width: 0;
+}
+.price-group {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: clamp(20px, 2.5vw, 36px);
+  margin-bottom: 1.5rem;
+}
+.price-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1.25rem;
+}
+.price-heading h2 {
+  font-size: clamp(2.5rem, 3.8vw, 3.8rem);
+}
+.price-heading > span {
+  font-size: 0.9375rem;
+  color: var(--muted);
+}
+.price-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.65rem 1.5rem;
+  align-items: center;
+  padding-block: 1.4rem;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 110px;
+}
+.price-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.price-row h3 {
+  font-size: clamp(1.7rem, 2.3vw, 2.1rem);
+  line-height: 1.15;
+}
+.price-row h3 a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.price-service p {
+  font-size: 0.9375rem;
+  margin-top: 0.45rem;
+}
+.price-amount {
+  display: grid;
+  text-align: end;
+  align-content: center;
+}
+.price-amount > span {
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.price-amount strong {
+  font: 400 clamp(2rem, 3vw, 2.8rem)/1.15 var(--serif);
+}
+.price-book {
+  justify-self: end;
+  grid-column: 2;
+  font-size: 1rem;
 }
 @media (max-width: 1150px) {
   .desktop {
@@ -1016,7 +1302,8 @@ footer nav h2 {
     width: 33px;
   }
   .brand small {
-    font-size: 0.53rem;
+    font-size: 0.6875rem;
+    letter-spacing: 0.04em;
   }
   .utilities {
     gap: 0;
@@ -1153,7 +1440,7 @@ footer nav h2 {
 .highlight small {
   display: block;
   color: var(--muted);
-  font: 0.87rem/1.65 var(--sans);
+  font: 0.9375rem/1.6 var(--sans);
 }
 .highlight strong {
   font-size: 0.95rem;
@@ -1231,76 +1518,11 @@ footer nav h2 {
 }
 
 @media (max-width: 800px) {
-  .hero-heading {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  .hero h1 {
-    font-size: clamp(3.8rem, 8vw, 5.5rem);
-  }
-  .hero-intro {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-  .hero-intro > p {
-    margin: 0;
-  }
-  .experience,
-  .beauty-detail {
-    gap: 5%;
-  }
-  .occasion-edit {
-    gap: 1rem;
-  }
   .enquiry {
     grid-template-columns: 1fr;
   }
 }
 @media (max-width: 640px) {
-  .hero {
-    padding-top: 2rem;
-  }
-  .hero-intro {
-    display: block;
-  }
-  .hero-intro > p {
-    margin-bottom: 1rem;
-  }
-  .hero-photo img {
-    aspect-ratio: 1.1;
-    object-position: right top;
-  }
-  .experience,
-  .beauty-detail {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  .experience > img {
-    aspect-ratio: 1.15;
-    object-position: 50% 24%;
-  }
-  .beauty-detail > img {
-    max-width: 280px;
-  }
-  .occasion-edit {
-    grid-template-columns: 1fr 1fr;
-  }
-  .occasion-edit-heading {
-    grid-column: 1 / -1;
-  }
-  .edit-hair {
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .edit-skin {
-    grid-column: 1 / -1;
-    grid-row: 3;
-  }
-  .edit-makeup {
-    grid-column: 2;
-    grid-row: 2;
-  }
   .enquiry-links,
   .visit-tips {
     grid-template-columns: 1fr;
@@ -1312,14 +1534,6 @@ footer nav h2 {
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
-  .experience {
-    grid-template-columns: 1.1fr 1fr;
-    gap: 24px;
-  }
-  .beauty-detail {
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 24px;
-  }
   .experience h2,
   .beauty-detail h2,
   .feature h2 {
@@ -1330,13 +1544,173 @@ footer nav h2 {
   }
 }
 @media (max-width: 640px) {
-  .appointment-faq {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
   .popular > .line {
     align-items: start;
     flex-direction: column;
+  }
+
+  .lookbook-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .experience {
+    gap: 1.5rem;
+  }
+  .experience > img {
+    aspect-ratio: 0.85;
+    object-position: 50% 20%;
+  }
+  .experience-sequence li {
+    padding-block: 1rem;
+  }
+  .beauty-detail {
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 24px;
+  }
+  .detail-notes > div {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+  .pricing-layout {
+    grid-template-columns: 1fr;
+    padding-top: 2.5rem;
+    gap: 2rem;
+  }
+  .pricing-intro {
+    position: static;
+  }
+  .pricing-intro h1 br {
+    display: none;
+  }
+  .pricing-intro > p {
+    max-width: 60ch;
+  }
+  .pricing-intro .filters {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pricing-intro .filters button {
+    min-width: 95px;
+    text-align: center;
+    border: 1px solid var(--line);
+  }
+}
+@media (max-width: 1150px) {
+  .hero {
+    width: 100%;
+    margin-top: 0;
+    padding: clamp(32px, 5vw, 64px);
+    min-height: 560px;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-heading {
+    max-width: 650px;
+    justify-items: center;
+  }
+  .hero::after {
+    background: linear-gradient(0deg, #0c1115d9, #0c11159c 55%, #0c111580);
+  }
+  .hero-photo img {
+    object-position: 70% 15%;
+  }
+  .hero .eyebrow,
+  .hero .actions {
+    justify-content: center;
+  }
+  .hero-intro > p {
+    margin-inline: auto;
+  }
+  .hero h1 {
+    font-size: clamp(3.5rem, 7vw, 5.5rem);
+  }
+}
+@media (max-width: 640px) {
+  body {
+    font-size: 1rem;
+  }
+  .hero {
+    min-height: 570px;
+    padding: 2.5rem var(--gutter);
+  }
+  .hero h1 {
+    font-size: clamp(3.2rem, 12vw, 4.8rem);
+  }
+  .hero-intro > p {
+    font-size: 1rem;
+  }
+  .hero .eyebrow {
+    font-size: 0.8125rem;
+    letter-spacing: 0.05em;
+  }
+  .hero .actions {
+    gap: 0.7rem;
+  }
+  .hero .btn {
+    padding: 0.75rem 1rem;
+  }
+  .hero-photo img {
+    object-position: 71% top;
+  }
+  .experience {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .experience-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+  .experience > img {
+    aspect-ratio: 1.2;
+  }
+  .experience-sequence h3 {
+    font-size: 1.9rem;
+  }
+  .beauty-detail {
+    grid-template-columns: 1fr;
+  }
+  .beauty-detail > img {
+    width: min(100%, 300px);
+  }
+  .detail-notes > div {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+  .appointment-faq > div:first-child {
+    gap: 0.75rem;
+  }
+  .appointment-faq .eyebrow {
+    margin: 0;
+  }
+  .appointment-faq details {
+    padding-inline: 0.5rem;
+  }
+  .appointment-faq summary {
+    font-size: 1rem;
+  }
+  .occasion-edit {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .edit-skin {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+  .edit-hair {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .edit-makeup {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .edit-skin img {
+    aspect-ratio: 1.5;
+  }
+  .inspiration {
+    grid-template-columns: 1fr;
   }
   .popular-row {
     grid-template-columns: 1fr auto;
@@ -1345,7 +1719,47 @@ footer nav h2 {
   .popular-row > div {
     grid-column: 1 / -1;
   }
-  .lookbook-grid {
-    grid-template-columns: 1fr 1fr;
+  .pricing-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-top: 2rem;
+  }
+  .pricing-intro {
+    position: static;
+  }
+  .pricing-intro h1 br {
+    display: none;
+  }
+  .pricing-intro > p {
+    max-width: 100%;
+  }
+  .pricing-intro .filters {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pricing-intro .filters button {
+    min-width: 0;
+    padding: 0.65rem 1rem;
+    text-align: center;
+    border: 1px solid var(--line);
+  }
+  .price-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .price-row {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+  .price-amount {
+    text-align: start;
+    display: flex;
+    gap: 0.4rem;
+    align-items: baseline;
+  }
+  .price-book {
+    grid-column: 1;
+    justify-self: start;
   }
 }
