@@ -114,3 +114,11 @@ The page uses the existing serif/sans-serif pairing, cloud-and-sky tokens, share
 Browser checks passed 44 About width/theme/direction combinations at 320, 360, 390, 430, 768, 820, 960, 1024, 1180, 1280 and 1440 pixels. Checks covered successful image decoding, no horizontal overflow, one page heading, active About links, compact navigation, physical-left drawer placement, utility interaction, desktop navigation spacing and non-wrapping links. All About content links returned successful responses and the Hair action opened the filtered Services page.
 
 About links were verified in the header and footer of each of the existing six pages. Full-page screenshots were inspected at mobile, tablet and desktop sizes in light/dark and LTR/RTL. The tablet care section was recomposed to avoid a small photograph beside an overly tall text column. All 30 photographic placements across the seven pages have distinct source URLs and unique files. The existing 13 dimension-matched replacements still retain their exact pixel sizes.
+
+## Wordmark and Home 1 banner — 20 November 2026
+
+Removed the descriptor beneath the shared CIELVANE wordmark in the header, compact drawer and footer, together with the unused configuration field and descriptor styling.
+
+Home 1's banner now uses the headline “Your beauty. In a new light.” with a pale-sky italic accent and concise supporting copy. A lower navigation strip links directly to Hair, Skin and Makeup filters. The existing consultation photograph and two main appointment/service CTAs remain in use. Compact layouts retain centered text over the photograph and simplify the category strip to comfortable category labels.
+
+Forty-four width/theme/direction combinations passed across the eleven standard QA widths. The checks covered no horizontal overflow, all hero actions staying inside the banner, centered compact headings, and the three filtered Services destinations. Descriptor removal was verified in all three brand placements across all seven pages. Desktop, tablet, phone and dark RTL screenshots were inspected. Drawer appearance controls and Escape dismissal were also checked. The existing photographs retain their unique placements.

@@ -16,7 +16,7 @@ const url = (key) =>
 const navLink = ([key, label]) =>
   `<a href="${url(key)}" ${page === key ? 'aria-current="page"' : ""}>${label}</a>`;
 const booking = `<a class="btn nav-book" href="${url("contact")}#booking">Book appointment</a>`;
-const brand = `<a class="brand" href="${url("index")}" aria-label="CIELVANE home"><img src="${root}assets/icons/cielvane.svg" alt=""><span>${site.name}<small>${site.descriptor}</small></span></a>`;
+const brand = `<a class="brand" href="${url("index")}" aria-label="CIELVANE home"><img src="${root}assets/icons/cielvane.svg" alt=""><span>${site.name}</span></a>`;
 const icon = (paths) =>
   `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths}</svg>`;
 const moon = icon(
