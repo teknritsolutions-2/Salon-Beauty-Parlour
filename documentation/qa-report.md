@@ -90,3 +90,7 @@ The desktop appearance group explicitly uses flex alignment. Theme and direction
 - No browser JavaScript exceptions or unsuccessful asset responses were recorded during the matrix. The final release is verified on the existing GitHub Pages URL after publication.
 
 Verification uses Brave/Chromium. Physical devices, Safari and Firefox were not independently tested. Appointment requests continue to require salon confirmation and an approved production delivery/scheduling integration.
+
+## Beauty in the Details section — 20 November 2026
+
+Home 1's section now uses an editorial text-led composition with a right-hand natural-ratio portrait and a three-column Tone/Texture/Finish strip. On tablets, the heading spans the section above the photograph and vertically arranged detail notes. Phones stack the heading, portrait and concise notes. The existing hair-services action remains. Forty width/theme/direction combinations passed, with section screenshots inspected at phone, tablet and desktop sizes. Natural image ratio and the Hair service-filter handoff were verified.
