@@ -36,7 +36,7 @@
           <a href="#booking" data-category="Hair">Hair appointments</a
           ><a href="#booking" data-category="Skin">Skin treatments</a
           ><a href="#booking" data-category="Makeup">Makeup &amp; occasions</a
-          ><a href="#visit-guide">General consultation</a>
+          ><a href="#booking">General consultation</a>
         </div>
       </section>
       <section class="booking wrap" id="booking">
@@ -151,36 +151,50 @@
           <div id="contact-info"></div>
         </aside>
       </section>
-      <section class="visit-guide wrap" id="visit-guide">
-        <p class="eyebrow">Preparing for your visit</p>
-        <div class="line">
-          <h2>Bring an idea.<br />Make it your own.</h2>
-          <p>A few details help start the conversation.</p>
+      <section
+        class="contact-location wrap"
+        id="location"
+        aria-labelledby="location-title"
+      >
+        <div class="line location-heading">
+          <div>
+            <p class="eyebrow">Location</p>
+            <h2 id="location-title">Find us in Sicily.</h2>
+          </div>
+          <a
+            class="text-link"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Palermo%2C%20Sicily%2C%20Italy"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Open Google Maps</a
+          >
         </div>
-        <div class="visit-tips">
-          <article>
-            <h3>Choose your care</h3>
-            <p>
-              Explore the menu and pick the service closest to what you have in
-              mind.
-            </p>
-          </article>
-          <article>
-            <h3>Share your references</h3>
-            <p>
-              Bring photographs, your styling preferences and any relevant
-              sensitivities.
-            </p>
-          </article>
-          <article>
-            <h3>Make time for it</h3>
-            <p>
-              Select a preferred day and time, then confirm the appointment
-              directly with the salon.
-            </p>
-          </article>
+        <iframe
+          class="location-map"
+          title="Google Map of Palermo, Sicily, Italy"
+          src="https://maps.google.com/maps?q=Palermo%2C%20Sicily%2C%20Italy&amp;z=13&amp;output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+        <div class="location-details">
+          <div>
+            <h3>Address</h3>
+            <address id="location-address"></address>
+          </div>
+          <div>
+            <h3>Appointments</h3>
+            <p id="location-phone"></p>
+          </div>
+          <div>
+            <h3>Service enquiries</h3>
+            <p id="location-enquiries"></p>
+          </div>
         </div>
-        <a class="text-link" href="#booking">Return to your request</a>
+        <p class="location-note">
+          Illustrative address and phone numbers. The map shows the Palermo
+          area.
+        </p>
       </section>
     </main>
     <footer></footer>

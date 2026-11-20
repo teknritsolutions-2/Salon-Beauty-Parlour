@@ -25,7 +25,7 @@ From the project root, run `python3 -m http.server 8000 --bind 127.0.0.1`. Open 
 ## Content and configuration
 
 - Edit service names, categories, durations, descriptions and indicative INR prices in `assets/js/services-data.js`. Keep service IDs stable for existing booking links.
-- Set verified contact details in `assets/js/site-config.js`. Empty fields are omitted from the contact page.
+- Set verified contact details in `assets/js/site-config.js`. Empty verified fields are omitted from the contact page. The Location section’s illustrative address and numbers are stored separately in `sampleLocation`.
 - The gallery catalogue in `assets/js/gallery.js` defines image categories, descriptions and intrinsic sizes.
 - Colours, layout and type scales are in `assets/css/`. Theme and direction preferences persist in browser storage when available.
 - See [asset credits](documentation/asset-credits.md) and the [browser QA report](documentation/qa-report.md).

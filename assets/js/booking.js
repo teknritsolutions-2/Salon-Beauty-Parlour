@@ -138,3 +138,10 @@ for (const key of ["address", "phone", "email", "hours"]) {
   p.textContent = site[key];
   document.querySelector("#contact-info").append(p);
 }
+
+document.querySelector("#location-address").textContent =
+  site.sampleLocation.address;
+document.querySelector("#location-phone").textContent =
+  site.sampleLocation.appointments;
+document.querySelector("#location-enquiries").textContent =
+  site.sampleLocation.enquiries;

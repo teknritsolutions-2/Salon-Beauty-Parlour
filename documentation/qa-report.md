@@ -126,3 +126,11 @@ Forty-four width/theme/direction combinations passed across the eleven standard 
 ## Home 2 tablet appointment planning — 20 November 2026
 
 At 641–1180px, Your Appointment, Your Way now places its heading above three aligned planning steps, followed by the existing actions. This removes the unused area beneath the former short left-hand heading column. Sixteen viewport/theme/direction checks passed across phone, tablet and desktop widths. Tablet screenshots were inspected in light LTR and dark RTL, the heading-to-steps gap was checked, and both actions returned successful responses.
+
+## Contact location section — 20 November 2026
+
+Replaced the final visit-preparation section with an interactive Google Maps embed centered on Palermo, Sicily, an external Google Maps action, a sample Italian address and two illustrative contact numbers beneath the map. Sample details are stored in site-config.js under sampleLocation and identified on the page as illustrative. The city map does not represent a verified street-level salon pin.
+
+The General Consultation enquiry link now targets the existing booking form. Obsolete visit-preparation styles were removed. The location grid adapts from three desktop columns to stacked contact details on phones.
+
+Twelve responsive/theme/direction combinations were checked at 320, 390, 768, 820, 1024 and 1440 pixels in light LTR and dark RTL. The Google Maps frame loaded and rendered Palermo. Section screenshots were inspected on phone, tablet and desktop. Tests confirmed sample details render, the new section is last, and the page has no horizontal overflow. The enquiry anchor and existing service preselection, request review and edit workflow passed separate checks.
