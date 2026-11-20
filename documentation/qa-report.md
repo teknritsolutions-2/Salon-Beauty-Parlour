@@ -162,3 +162,11 @@ The two new licensed photographs show a stylist finishing a dark low bun and a b
 Chromium and WebKit each passed 22 width/theme/direction combinations across 320, 360, 390, 430, 768, 820, 960, 1024, 1180, 1280 and 1440 pixels, in light LTR and dark RTL. Tests verified no horizontal overflow, no text/photo overlap, equal photo dimensions, natural image proportions, centered headings and both action links. Actual desktop, tablet and mobile screenshots were inspected. Chromium was rechecked after tightening the final section spacing.
 
 Home 1's stylesheet and primary image URLs carry a new version query to prevent an older cached banner stylesheet or landscape image from being combined with the new layout.
+
+## Tablet hero arrangement and hairstylist portrait — 20 November 2026
+
+Tablets from 641–1150px now use the desktop photo–headline–photo arrangement. Heading sizes, paragraph widths and vertically grouped actions are adjusted for the narrower middle column. Phones retain the normal-flow text-above-photo-pair composition.
+
+The left photograph now shows a woman hairdresser facing the camera behind a salon chair with scissors and a comb. The replacement remains 1000 × 1400 pixels, preserves her full hairstyle and both tools, and has a distinct source and file hash. Its source is documented in asset-credits.md.
+
+Chromium and WebKit each passed 26 responsive/theme/direction cases across 320, 390, 430, 641, 700, 768, 820, 960, 1024, 1150, 1151, 1280 and 1440px in light LTR and dark RTL. Tests verified the three-column tablet arrangement, phone stacking, equal natural-ratio images, no text/photo overlap, no horizontal overflow and both main actions. Tablet screenshots at 768, 820 and 1024px and the desktop composition were inspected. Versioned stylesheet and image URLs ensure the revised tablet styles and portrait load together.

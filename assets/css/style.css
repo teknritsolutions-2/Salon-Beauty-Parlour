@@ -2053,11 +2053,37 @@ footer nav h2 {
   font-size: 0.9375rem;
 }
 
-@media (max-width: 1150px) {
+@media (min-width: 641px) and (max-width: 1150px) {
+  .hero {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.2fr) minmax(0, 0.9fr);
+    gap: clamp(16px, 2vw, 24px);
+    padding-block: 2.5rem 1.5rem;
+  }
+  .hero-heading {
+    gap: 1rem;
+  }
+  .hero h1 {
+    font-size: clamp(2.5rem, 4.5vw, 3rem);
+  }
+  .hero-heading > p {
+    font-size: 1rem;
+    max-width: 28ch;
+  }
+  .hero .actions {
+    flex-direction: column;
+    gap: 0.65rem;
+    width: 100%;
+  }
+  .hero .btn {
+    width: min(100%, 190px);
+    padding: 0.7rem 0.8rem;
+  }
+}
+@media (max-width: 640px) {
   .hero {
     grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    padding-block: 2.5rem 1.5rem;
+    gap: 1.5rem 1rem;
+    padding-block: 2rem 1rem;
   }
   .hero-heading {
     grid-column: 1 / -1;
@@ -2065,31 +2091,6 @@ footer nav h2 {
     max-width: 650px;
     justify-self: center;
     gap: 1.25rem;
-  }
-  .hero h1 {
-    font-size: clamp(3.6rem, 7vw, 4.8rem);
-  }
-  .hero-heading > p {
-    max-width: 40ch;
-  }
-  .hero-photo {
-    grid-row: 2;
-    width: min(100%, 210px);
-    align-self: start;
-  }
-  .hero-photo-styling {
-    grid-column: 1;
-    justify-self: end;
-  }
-  .hero-photo-finish {
-    grid-column: 2;
-    justify-self: start;
-  }
-}
-@media (max-width: 640px) {
-  .hero {
-    gap: 1.5rem 1rem;
-    padding-block: 2rem 1rem;
   }
   .hero h1 {
     font-size: clamp(3.3rem, 13vw, 4.3rem);
@@ -2102,6 +2103,14 @@ footer nav h2 {
     padding: 0.75rem 1rem;
   }
   .hero-photo {
+    grid-row: 2;
     width: 100%;
+    align-self: start;
+  }
+  .hero-photo-styling {
+    grid-column: 1;
+  }
+  .hero-photo-finish {
+    grid-column: 2;
   }
 }
