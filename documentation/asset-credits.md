@@ -2,7 +2,7 @@
 
 ## Photography
 
-The site uses licensed salon and beauty reference photography. Each local WebP preserves the source photograph's aspect ratio. The galleries illustrate services and styling ideas. The named photographers retain their rights. [Pexels License](https://www.pexels.com/license/)
+The site uses licensed salon and beauty reference photography. Each local WebP uses proportional resizing and, where needed, a crop matched to its placement. The galleries illustrate services and styling ideas. The named photographers retain their rights. [Pexels License](https://www.pexels.com/license/)
 
 | Local asset | Subject | Photographer and original photograph |
 | --- | --- | --- |
@@ -35,3 +35,23 @@ The abstract wing mark in assets/icons/cielvane.svg was drawn originally for thi
 ## Working name search
 
 A basic public web search on 19 November 2026 for “CIELVANE salon beauty” and “Cielvane” found no material salon-business conflict in the reviewed results. Unrelated uses included an [artist portfolio](https://kirke.social/cielvane/portfolio) and an [avatar-texture product](https://booth.pm/zh-cn/items/8820705). CIELVANE was retained as the proposed working name. This search does not establish legal clearance, trademark availability or exclusive domain rights.
+
+## Services and gallery photography
+
+These additional photographs are licensed for use under the [Pexels License](https://www.pexels.com/license/).
+
+| Local asset | Subject | Photographer and original photograph |
+| --- | --- | --- |
+| service-hair.webp | Stylist curling dark hair beside a gilt mirror | [Ron Lach](https://www.pexels.com/photo/10318038/) |
+| service-skin.webp | Pressing a white cloth against the cheek during a facial | [Polina Tankilevitch](https://www.pexels.com/photo/3738344/) |
+| service-makeup.webp | Blending silver eye makeup | [Kampus Production](https://www.pexels.com/photo/7514850/) |
+| gallery-skin-massage.webp | Hands massaging the cheeks during a facial | [Amar Preciado](https://www.pexels.com/photo/20861922/) |
+| gallery-waves.webp | A hand lifting long brown waves | [Hairlust Official](https://www.pexels.com/photo/35267458/) |
+| gallery-bridal.webp | Bridal eye makeup by a window | [Alexander Mass](https://www.pexels.com/photo/37710475/) |
+| gallery-interior.webp | Arched salon mirrors and a checkerboard floor | [Atikah Akhtar](https://www.pexels.com/photo/4974568/) |
+| gallery-skin-mask.webp | Brushing on a mask above a red headband | [Anete Lusina](https://www.pexels.com/photo/5240809/) |
+| gallery-colour.webp | Colour applied to a hair section over foil | [Ionela Mat](https://www.pexels.com/photo/20238659/) |
+| gallery-makeup.webp | Detail of a brush at the brow | [Eduardo Vallarta](https://www.pexels.com/photo/37083518/) |
+| gallery-hair.webp | Round brush blow-dry | [Daniil Kondrashin](https://www.pexels.com/photo/14615063/) |
+| gallery-wash.webp | Shampoo lather at a black basin | [cottonbro studio](https://www.pexels.com/photo/3993444/) |
+| gallery-curls.webp | Black-and-white portrait with long dark curls | [Daniel Neves](https://www.pexels.com/photo/26888713/) |

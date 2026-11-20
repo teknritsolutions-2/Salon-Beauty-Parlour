@@ -1,11 +1,17 @@
 import { menu, categories, price } from "./services-data.js";
 import { setupFilters } from "./filters.js";
 
+const serviceImageDescriptions = {
+  Hair: "A stylist curling a dark bob beside a salon mirror",
+  Skin: "A practitioner cleansing a reclining client's cheek with a soft cloth",
+  Makeup: "A makeup artist blending silver eyeshadow",
+};
+
 function renderServices(groups) {
   return groups
     .map((category) => {
       const items = menu.filter((item) => item.category === category);
-      return `<section class="menu-group illustrated"><div class="group-title"><h2>${category}</h2><img loading="lazy" alt="${category} inspiration" src="../assets/images/${category.toLowerCase()}.webp"></div><div>${items
+      return `<section class="menu-group illustrated"><div class="group-title"><h2>${category}</h2><img loading="lazy" alt="${serviceImageDescriptions[category]}" src="../assets/images/service-${category.toLowerCase()}.webp"></div><div>${items
         .map(
           (item) =>
             `<div class="service-row" id="${item.id}"><div><h3>${item.name}</h3><p>${item.detail}</p><small>${item.minutes} min</small></div><div class="service-cost"><strong>From ${price(item.price)}</strong><a class="text-link" href="contact.html?service=${item.id}#booking" aria-label="Book ${item.name}">Book service</a></div></div>`,

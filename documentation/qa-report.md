@@ -27,11 +27,11 @@ Static HTML references and the dynamically generated service/gallery catalogues 
 | Home 2 hero | studio-edit.webp retained |
 | Home 2 Occasion Edit | occasion-hair.webp, occasion-skin.webp, occasion-makeup.webp, all new |
 | Home 2 Bring Your Inspiration | wash.webp replaces colour.webp |
-| Services | Category thumbnails retain the established hair/skin/makeup references |
+| Services | Dedicated service-hair.webp, service-skin.webp and service-makeup.webp photographs |
 | Pricing and Contact | No decorative photographs added |
-| Gallery | Existing references retained, updated curls image and the new facial-massage Lookbook reference included |
+| Gallery | Ten dedicated gallery-prefixed photographs, separate from all homepage and Services photographs |
 
-The two homepages have distinct major photographic features. Each homepage uses each of its photographs once. Category thumbnails and gallery references provide continuity with the service menu and preview links. Source credits and licenses are recorded in asset-credits.md.
+The site has 28 distinct page-level photographic placements. Each photograph is assigned to one placement. Source credits and licenses are recorded in asset-credits.md.
 
 ## Functional verification
 
@@ -94,3 +94,13 @@ Verification uses Brave/Chromium. Physical devices, Safari and Firefox were not 
 ## Beauty in the Details section — 20 November 2026
 
 Home 1's section now uses an editorial text-led composition with a right-hand natural-ratio portrait and a three-column Tone/Texture/Finish strip. On tablets, the heading spans the section above the photograph and vertically arranged detail notes. Phones stack the heading, portrait and concise notes. The existing hair-services action remains. Forty width/theme/direction combinations passed, with section screenshots inspected at phone, tablet and desktop sizes. Natural image ratio and the Hair service-filter handoff were verified.
+
+## Sitewide photography deduplication — 20 November 2026
+
+The audit covered static HTML and dynamically generated Services and Gallery content on all six pages. Home 1 uses ten distinct photographs and Home 2 uses five. The three repeated Services photographs and all ten repeated Gallery photographs were replaced with thirteen distinct licensed Pexels photographs. Gallery thumbnails open their matching photograph in the existing detail viewer.
+
+Every replacement was decoded and compared against the corresponding original file. All thirteen preserve the exact original pixel width and height. Rendered image-container dimensions remain the existing design. The Services makeup photograph uses a targeted vertical crop position to keep the eye-makeup work visible on phones. No original homepage photograph was changed.
+
+Browser verification found 28 photo placements with 28 unique source URLs across the six pages. All 28 WebP files have unique SHA-256 hashes. Source IDs and photographer credits are recorded in asset-credits.md. No unused photograph files were added.
+
+Services and Gallery were inspected at 320, 390, 768, 820, 1024 and 1440 pixels. The audit checked successful decoding, image proportions, captions, no horizontal overflow, Hair filtering and matching thumbnail-to-lightbox selection, next navigation and keyboard dismissal. No runtime errors or failed asset responses were recorded. The replacement makeup crop was separately inspected at 320 pixels. The release is checked on the existing live Pages URL after publication.
