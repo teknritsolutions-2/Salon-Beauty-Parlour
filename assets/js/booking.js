@@ -1,5 +1,6 @@
 import { menu, categories, price } from "./services-data.js";
 import { site } from "./site-config.js";
+import { enhanceSelect } from "./select-control.js";
 const form = document.querySelector("#request");
 const fields = form.elements;
 const review = document.querySelector("#review");
@@ -11,6 +12,7 @@ fields.category.replaceChildren(
   option("Choose a category", ""),
   ...categories.map((c) => option(c, c)),
 );
+let serviceControl;
 function updateServices() {
   fields.service.replaceChildren(
     option("Choose a service", ""),
@@ -18,14 +20,18 @@ function updateServices() {
       .filter((s) => s.category === fields.category.value)
       .map((s) => option(s.name, s.id)),
   );
+  serviceControl?.refresh();
 }
 fields.category.onchange = updateServices;
 for (const link of document.querySelectorAll("[data-category]")) {
   link.addEventListener("click", () => {
     fields.category.value = link.dataset.category;
+    categoryControl.refresh();
     updateServices();
     if (form.hidden) edit.click();
-    fields.service.focus({ preventScroll: true });
+    document
+      .querySelector("#select-service-trigger")
+      .focus({ preventScroll: true });
   });
 }
 const choice = menu.find(
@@ -34,6 +40,8 @@ const choice = menu.find(
 if (choice) fields.category.value = choice.category;
 updateServices();
 if (choice) fields.service.value = choice.id;
+const categoryControl = enhanceSelect(fields.category);
+serviceControl = enhanceSelect(fields.service);
 function today() {
   const d = new Date();
   return [

@@ -134,3 +134,15 @@ Replaced the final visit-preparation section with an interactive Google Maps emb
 The General Consultation enquiry link now targets the existing booking form. Obsolete visit-preparation styles were removed. The location grid adapts from three desktop columns to stacked contact details on phones.
 
 Twelve responsive/theme/direction combinations were checked at 320, 390, 768, 820, 1024 and 1440 pixels in light LTR and dark RTL. The Google Maps frame loaded and rendered Palermo. Section screenshots were inspected on phone, tablet and desktop. Tests confirmed sample details render, the new section is last, and the page has no horizontal overflow. The enquiry anchor and existing service preselection, request review and edit workflow passed separate checks.
+
+## Dropdown placement, sizing and arrows — 20 November 2026
+
+A source audit found two form selects, both on Contact. Their browser-native popups have been enhanced with a shared in-page combobox/listbox component so options are anchored to the rendered field in compact viewport emulation and on touch layouts. The native selects remain the source of form values and constraint validation.
+
+Both option lists match their field width, use 16px text and at least 44px option rows, and choose an above/below placement based on available viewport space beneath the sticky header. The arrow sits 18px inside the logical field end, with dedicated text padding. Controls keep a consistent height, and long selected values have an accessible full label and tooltip.
+
+The component supports pointer/touch selection, Up/Down, Home/End, type-ahead, Enter/Space, Escape, Tab dismissal, outside dismissal, selected/active states, required-field feedback and focus on invalid fields. Category changes refresh the dependent services. Initial service query selection, enquiry shortcuts, native form values, review/edit and text downloads remain connected to the original booking implementation.
+
+Chromium and WebKit each passed 20 width/theme/direction cases at 320, 360, 390, 430, 768, 820, 960, 1024, 1280 and 1440 pixels in light LTR and dark RTL. Checks covered exact menu/trigger alignment, menu width, viewport containment, above-field placement, arrow inset, readable option text, touch targets and dynamic service choices. Both engines passed keyboard selection, required-select validation, preselection, review/edit/download and dismissal checks.
+
+Additional real touch-event emulation checks passed in both engines for category/service selection, open-menu relocation on resize and form reset display synchronization. Mobile and tablet screenshots were inspected in both engines. The desktop Home dropdown and compact drawer retain their existing implementations. Testing used browser engines and emulated viewports rather than physical phones.

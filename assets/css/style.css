@@ -2073,3 +2073,103 @@ footer nav h2 {
     height: 340px;
   }
 }
+
+.select-control {
+  align-self: start;
+  position: relative;
+  min-width: 0;
+}
+.select-native {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  opacity: 0;
+  clip-path: inset(50%);
+  pointer-events: none;
+}
+.select-trigger {
+  display: block;
+  position: relative;
+  width: 100%;
+  min-height: 48px;
+  padding: 0.7rem 2.9rem 0.7rem 0.8rem;
+  padding-inline: 0.8rem 2.9rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--ink);
+  text-align: start;
+  font: 400 1rem/1.5 var(--sans);
+}
+.select-trigger > span {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.select-trigger::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 18px;
+  top: calc(50% - 5px);
+  width: 8px;
+  height: 8px;
+  border: solid currentColor;
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+.select-trigger[aria-expanded="true"]::after {
+  top: calc(50% - 1px);
+  transform: rotate(225deg);
+}
+.select-trigger[aria-invalid="true"] {
+  border-color: var(--accent);
+}
+.select-control.is-open {
+  z-index: 4;
+}
+.select-options {
+  position: absolute;
+  inset-inline: 0;
+  top: calc(100% + 6px);
+  list-style: none;
+  margin: 0;
+  padding: 4px;
+  max-height: 280px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: 0 8px 24px #0002;
+  font: 400 1rem/1.5 var(--sans);
+}
+.select-control[data-placement="above"] .select-options {
+  top: auto;
+  bottom: calc(100% + 6px);
+}
+.select-options [role="option"] {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.6rem 0.75rem;
+  border-inline-start: 3px solid transparent;
+  cursor: pointer;
+}
+.select-options [aria-selected="true"] {
+  border-inline-start-color: var(--accent);
+}
+.select-options [role="option"]:hover,
+.select-options .is-active {
+  background: var(--action);
+  color: var(--on-action);
+}
+.select-error {
+  color: var(--ink);
+  font-size: 0.9375rem;
+}
