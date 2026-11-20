@@ -122,3 +122,7 @@ Removed the descriptor beneath the shared CIELVANE wordmark in the header, compa
 Home 1's banner now uses the headline “Your beauty. In a new light.” with a pale-sky italic accent and concise supporting copy. A lower navigation strip links directly to Hair, Skin and Makeup filters. The existing consultation photograph and two main appointment/service CTAs remain in use. Compact layouts retain centered text over the photograph and simplify the category strip to comfortable category labels.
 
 Forty-four width/theme/direction combinations passed across the eleven standard QA widths. The checks covered no horizontal overflow, all hero actions staying inside the banner, centered compact headings, and the three filtered Services destinations. Descriptor removal was verified in all three brand placements across all seven pages. Desktop, tablet, phone and dark RTL screenshots were inspected. Drawer appearance controls and Escape dismissal were also checked. The existing photographs retain their unique placements.
+
+## Home 2 tablet appointment planning — 20 November 2026
+
+At 641–1180px, Your Appointment, Your Way now places its heading above three aligned planning steps, followed by the existing actions. This removes the unused area beneath the former short left-hand heading column. Sixteen viewport/theme/direction checks passed across phone, tablet and desktop widths. Tablet screenshots were inspected in light LTR and dark RTL, the heading-to-steps gap was checked, and both actions returned successful responses.

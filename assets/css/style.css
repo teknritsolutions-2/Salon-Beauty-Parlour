@@ -1578,6 +1578,22 @@ footer nav h2 {
   }
 }
 
+@media (min-width: 641px) and (max-width: 1180px) {
+  .planning {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .planning-guide ol {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+  .planning-guide h3 {
+    font-size: 1.7rem;
+    line-height: 1.15;
+  }
+}
+
 @media (min-width: 641px) and (max-width: 960px) {
   .experience h2,
   .feature h2 {
