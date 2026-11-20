@@ -27,8 +27,6 @@
 [dir="rtl"] .pricing-intro .filters button[aria-pressed="true"] {
   box-shadow: inset -3px 0 var(--accent);
 }
-@media (max-width: 1150px) {
-  [dir="rtl"] .hero :is(h1, p) {
-    text-align: center;
-  }
+[dir="rtl"] .hero :is(h1, p) {
+  text-align: center;
 }

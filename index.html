@@ -10,42 +10,45 @@
     <title>Home | CIELVANE — Salon &amp; Beauty Studio</title>
     <link rel="icon" href="assets/icons/cielvane.svg" />
     <link rel="stylesheet" href="assets/css/fonts.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css?v=paired-hero" />
     <link rel="stylesheet" href="assets/css/dark-mode.css" />
-    <link rel="stylesheet" href="assets/css/rtl.css" />
+    <link rel="stylesheet" href="assets/css/rtl.css?v=paired-hero" />
     <script type="module" src="assets/js/main.js"></script>
   </head>
   <body data-page="index">
     <a class="skip" href="#main">Skip to content</a>
     <header></header>
     <main id="main">
-      <section class="hero wrap">
+      <section class="hero wrap" aria-labelledby="hero-title">
         <div class="hero-heading">
-          <div>
-            <p class="eyebrow">Hair · Skin · Makeup</p>
-            <h1>Your beauty.<br /><em>In a new light.</em></h1>
-          </div>
-          <div class="hero-intro">
-            <p>
-              Thoughtful hair, skin and makeup, shaped around you. Make a little
-              room for a fresh perspective.
-            </p>
-            <div class="actions">
-              <a class="btn" href="pages/contact.html#booking"
-                >Book appointment</a
-              ><a class="btn outline" href="pages/services.html"
-                >Explore services</a
-              >
-            </div>
+          <h1 id="hero-title">Your kind<br /><em>of beautiful.</em></h1>
+          <p>
+            Hair, skin and makeup, considered around you. A little time to feel
+            like yourself.
+          </p>
+          <div class="actions">
+            <a class="btn" href="pages/contact.html#booking">Book appointment</a
+            ><a class="btn outline" href="pages/services.html"
+              >Explore services</a
+            >
           </div>
         </div>
-        <figure class="hero-photo">
+        <figure class="hero-photo hero-photo-styling">
           <img
-            src="assets/images/banner.webp"
-            alt="A hairstylist discussing styling preferences with a seated client at a salon mirror"
-            width="1800"
-            height="1200"
+            src="assets/images/banner.webp?v=paired-hero"
+            alt="A stylist applying finishing spray to a polished dark low bun"
+            width="1000"
+            height="1400"
             fetchpriority="high"
+          />
+        </figure>
+        <figure class="hero-photo hero-photo-finish">
+          <img
+            src="assets/images/hero-finish.webp"
+            alt="Bridal beauty reference with swept-back hair and drop earrings"
+            width="1000"
+            height="1400"
+            decoding="async"
           />
         </figure>
       </section>

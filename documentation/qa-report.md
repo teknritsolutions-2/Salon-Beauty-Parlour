@@ -152,3 +152,13 @@ Additional real touch-event emulation checks passed in both engines for category
 Replaced the desktop full-background text overlay with a twelve-column editorial composition. The large photograph occupies the leading side and an opaque text panel overlaps its lower trailing edge. Typography and actions now sit on a light neutral surface, with a charcoal counterpart in dark mode. The added category navigation strip and its styles were removed.
 
 The compact banner retains the previously requested centered photographic treatment. Twenty width/theme/direction cases passed, with desktop screenshots inspected at 1280 and 1440 pixels and compact screenshots inspected at phone/tablet widths. Both main actions returned successful responses. No horizontal overflow or runtime errors were recorded.
+
+## Home 1 paired-photo banner — 20 November 2026
+
+Replaced the rejected overlapping-panel composition with a new three-column editorial layout. Two matched portrait photographs frame the centered headline and actions on desktop. Phones and tablets place the headline and buttons above a centered photo pair in normal document flow. The banner no longer uses overlapping panels or absolutely positioned background photographs.
+
+The two new licensed photographs show a stylist finishing a dark low bun and a bridal beauty reference with swept-back hair. Both are delivered at 1000 × 1400 pixels and displayed in their natural ratio. The first replaces the prior banner file, and the second is new. An audit confirmed 31 distinct photographs across all seven pages, with the earlier dimension-matched Services and Gallery replacements still intact. Credits are in asset-credits.md.
+
+Chromium and WebKit each passed 22 width/theme/direction combinations across 320, 360, 390, 430, 768, 820, 960, 1024, 1180, 1280 and 1440 pixels, in light LTR and dark RTL. Tests verified no horizontal overflow, no text/photo overlap, equal photo dimensions, natural image proportions, centered headings and both action links. Actual desktop, tablet and mobile screenshots were inspected. Chromium was rechecked after tightening the final section spacing.
+
+Home 1's stylesheet and primary image URLs carry a new version query to prevent an older cached banner stylesheet or landscape image from being combined with the new layout.
